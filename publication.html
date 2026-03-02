@@ -29,11 +29,24 @@
     color: var(--fg);
     font-size: 0.95rem;
     line-height: 1.65;
+    counter-reset: pub-counter;
   }
 
   .pub-list li {
-    padding: 12px 0;
+    padding: 12px 0 12px 48px;
     border-bottom: 1px solid var(--border);
+    position: relative;
+    counter-increment: pub-counter;
+  }
+
+  .pub-list li::before {
+    content: "[" counter(pub-counter) "]";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-weight: 600;
+    color: var(--primary);
+    min-width: 40px;
   }
 
   .pub-list li:last-child {
@@ -147,7 +160,7 @@
 
     <!-- Top Conference Papers -->
     <div class="publication-section">
-      <h3 class="section-header">Top Conference Papers (IEDM, ISSCC, VLSI Technology and Circuits)</h3>
+      <h3 class="section-header">Top Conference Papers </h3>
       <ul class="pub-list">
         <li>Bo-Jheng Shih, Shie-Ping Chang, Ting-Yu Chen, Zih-Yang Chen, Po-Jung Sung, Nein-Chih Lin, Chih-Chao Yang, Po-Tsang Huang, Huang-Chung Cheng, Ming-Yang Li, Iuliana P. Radu, and Kuan-Neng Chen, "Precise Alignment in Ultra-Thin (< 1 µm) Interlayer Wafer-Level Active Device Transfer with SOI Temporary Bonding," <em>IEEE International Electron Devices Meeting (IEDM)</em>, 2024.</li>
         
