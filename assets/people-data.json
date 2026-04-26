@@ -1,0 +1,168 @@
+{
+  "current": [
+    { "name": "黃昱浤", "degree": "Ph.D.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
+    { "name": "黃威誌", "degree": "Ph.D.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
+    { "name": "呂昀庭", "degree": "Ph.D.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
+    { "name": "林欣穎", "degree": "Ph.D.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
+    { "name": "葉舜良", "degree": "Ph.D.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
+    { "name": "黃郁珊", "degree": "Ph.D.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
+    { "name": "黃資涵", "degree": "Ph.D.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
+    { "name": "莊涵傑", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
+    { "name": "胡采喬", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
+    { "name": "陳逸銘", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "","photo": "" },
+    { "name": "蘇子妤", "degree": "M.S.", "thesis_zh": "", "thesis_en": "",  "position": "","email": "","photo": "" },
+    { "name": "吳承祐", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "呂浩宇", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "許恩瑜", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "邱士豪", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "徐珮宸", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "吳明和", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "練韋辰", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "許庭語", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": ""},
+    { "name": "郭家瑜", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "楊靖姮", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "許博翔", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "郭邑安", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "鄧業柏", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "","photo": "" },
+    { "name": "林采衡", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "阮黃美", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" },
+    { "name": "Teja", "degree": "M.S.", "thesis_zh": "", "thesis_en": "",  "position": "", "email": "", "photo": "" },
+    { "name": "Ranjan", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" }
+  ],
+  "alumni": [
+    {
+      "name": "粘佑均", "degree": "M.S.", "year": "2024",
+      "thesis_zh": "應用於鐵電電晶體記憶體內運算模組之非線性時間數位轉換器",
+      "thesis_en": "Non-Linear Tunable RO-based Time-to-Digital Converter for FeFET-based Computation-in-Memory Macro",
+      "position": "聯詠"
+    },
+
+    {
+      "name": "李宗育", "degree": "M.S.", "year": "2024",
+      "thesis_zh": "基於16奈米FinFET及近似加法樹實現高能效數位式記憶體內運算電路",
+      "thesis_en": "An Efficient Digital Computation-in-Memory (D-CIM) Macro with Approximate Adder Tree using 16nm FinFET Technology",
+      "position": "聯詠"
+    },
+    {
+      "name": "沈俊宇", "degree": "M.S.", "year": "2024",
+      "thesis_zh": "應用於先期客製化診斷之模組化靜態隨機存取記憶體虛擬編譯器",
+      "thesis_en": "Module-Based SRAM Virtual Compiler for Early-Phase Customized Diagnosis",
+      "position": "WISESEMI(智騰半導體)"
+    },
+    {
+      "name": "洪侑廷", "degree": "M.S.", "year": "2024",
+      "thesis_zh": "利用互補式鐵電電晶體實現具變異容忍及抗噪性之內容可定址記憶體設計",
+      "thesis_en": "Variation-tolerant and Noise-Immune Content-Addressable Memory Design using Complementary FeFET",
+      "position": "台積電"
+    },
+    {
+      "name": "陳怡安", "degree": "M.S.", "year": "2024",
+      "thesis_zh": "利用壓縮超維度計算技術實現高能效內存檢索引擎",
+      "thesis_en": "Energy-Efficient In-Memory Retrieval Engine with Compressed Hyperdimensional Computing Techniques",
+      "position": "聯詠"
+    },
+    {
+      "name": "陳磊", "degree": "M.S.", "year": "2024",
+      "thesis_zh": "基於三維動態隨機存取記憶體庫級優化之16奈米高面積效能擴散模型加速器",
+      "thesis_en": "16nm Area-Efficient Accelerator Design with 3D-DRAM and Bank-Level Dataflow Optimization for Diffusion Models",
+      "position": "台積電"
+    },
+    {
+      "name": "黃志棋", "degree": "M.S.", "year": "2024",
+      "thesis_zh": "數位記憶體內運算模組之分析模型與設計探索",
+      "thesis_en": "Analytical Model and Design Exploration of Digital Computing-In-Memory Macros",
+      "position": "聯詠科技"
+    },
+    {
+      "name": "賴怡廷", "degree": "M.S.", "year": "2024",
+      "thesis_zh": "基於積層型三維技術實現高密度雙層靜態隨機存取記憶體具備矽柱考慮分區和共享位線方案",
+      "thesis_en": "High-Density Dual-Layer 3D-SRAM Array with Si-pillar-aware partition and shared Bitline scheme using Monolithic 3D Elevated-Epi Technique",
+      "position": ""
+    },
+    {
+      "name": "王聖博", "degree": "M.S.", "year": "2023",
+      "thesis_zh": "應用於3D NAND Flash內存快取記憶體中具預測控制機制之分散式數位電源穩壓電路",
+      "thesis_en": "Distributed Digital Voltage Regulation with Predicted Control for Cache in 3D NAND Flash",
+      "position": "旺宏科技"
+    },
+    {
+      "name": "倪健嘉", "degree": "M.S.", "year": "2023",
+      "thesis_zh": "基於16奈米FinFET實現具可變區塊之高能效數位式記憶體浮點數內運算電路設計",
+      "thesis_en": "Energy-Efficient Digital Floating-Point Computation-in-Memory Macro Design with Flexible Blocks using 16nm FinFET Technology",
+      "position": "台積電"
+    },
+    {
+      "name": "林政誠", "degree": "M.S.", "year": "2023",
+      "thesis_zh": "基於純整數量化注意力模組之28奈米ViT加速器設計",
+      "thesis_en": "A 28nm Vision Transformer Accelerator with Integer-Only Quantized Attention Block",
+      "position": "聯詠"
+    },
+    {
+      "name": "黃良德", "degree": "M.S.", "year": "2023",
+      "thesis_zh": "應用於非揮發性記憶體內運算加速器之非規則操作單元壓縮技術",
+      "thesis_en": "Irregular Operation-Unit-based Compression for Non-Volatile Computation-in-Memory Accelerator",
+      "position": "高通"
+    },
+    {
+      "name": "廖苡瑄", "degree": "M.S.", "year": "2023",
+      "thesis_zh": "符合3D NAND Flash規格的高速階層式單端讀取Cache架構",
+      "thesis_en": "High-Speed Cache Design with Hierarchal Single-ended Read Scheme for 3D NAND Flash",
+      "position": "聯詠"
+    },
+    {
+      "name": "林庭安", "degree": "M.S.", "year": "2023",
+      "thesis_zh": "應用於多位元記憶體內運算電路之In-Situ錯誤更正框架及方法探索",
+      "thesis_en": "Framework and Design Exploration of In-Situ Error Correction for Multi-Bit Computation-in-Memory Circuits",
+      "position": ""
+    },
+    {
+      "name": "余政融", "degree": "M.S.", "year": "2023",
+      "thesis_zh": "應用於邊緣裝置遷移學習之28奈米列管線化加速器設計",
+      "thesis_en": "A 28nm Row-based Pipelined Accelerator with Multi-bank Buffer Management for On-Device Transfer Learning",
+      "position": "聯詠"
+    },
+    {
+      "name": "李婕伶", "degree": "M.S.", "year": "2023",
+      "thesis_zh": "基於高架積層型三維技術實現多型態混合式三維標準元件庫及數位式記憶體內運算電路",
+      "thesis_en": "Monolithic Hybrid-3D Standard Cell Library with Sandwiched Inter-Metal Layer for 3D Digital Computation-in-Memory Circuits",
+      "position": "聯發科"
+    },
+
+    {
+      "name": "吳穎奕", "degree": "M.S.", "year": "2022",
+      "thesis_zh": "基於16奈米FinFET客製化擴充標準單元之高能效數位式記憶體內運算電路設計",
+      "thesis_en": "Energy-Efficient Digital Computation-in-Memory Macro Design with Customized Extended Standard Cells using 16nm FinFET Technology",
+      "position": ""
+    },
+    {
+      "name": "周育弘", "degree": "M.S.", "year": "2022",
+      "thesis_zh": "應用於三維積體電路低電壓單端訊號之去耦電容分配和相位編碼技術",
+      "thesis_en": "Low-Voltage Single-Ended Signaling with DECAP Allocation and Phase Coding for 3DICs",
+      "position": "AP Memory(愛普)"
+    },
+    {
+      "name": "裴翰祥", "degree": "M.S.", "year": "2022",
+      "thesis_zh": "應用於邊緣端模擬量化遷移學習之高能效列管線化卷積神經網路訓練加速器",
+      "thesis_en": "An Energy-efficient Row-Based Pipelined CNN Training Accelerator for On-Device Transfer Learning with Simulated Quantization",
+      "position": "聯詠"
+    },
+    {
+      "name": "楊庭維", "degree": "M.S.", "year": "2022",
+      "thesis_zh": "基於互補式鐵電晶體之布斯乘法解碼器實現高能效全數位記憶體內運算電路模組",
+      "thesis_en": "Energy-Efficient All-Digital Computation-in-Memory Macro Design with CFeFET-based Booth Decoder",
+      "position": ""
+    },
+    {
+      "name": "黃詠暄", "degree": "M.S.", "year": "2022",
+      "thesis_zh": "利用互補式鐵電電晶體不規則查表電路實現高能效數位式記憶體內運算模塊",
+      "thesis_en": "Energy-Efficient Digital Computation-in-Memory Macro Design with Irregular Lookup Table using Complementary Ferroelectric FETs",
+      "position": "聯發科"
+    },
+    {
+      "name": "許宛庭", "degree": "M.S.", "year": "2022",
+      "thesis_zh": "利用雷射液態磊晶技術實現混合式積層型三維標準單元及全數位記憶體內運算電路",
+      "thesis_en": "Monolithic 3D Digital computation-in-memory circuits with hybrid-3D standard cells using Laser-Liquid-Phase-Epitaxy Technique",
+      "position": "M31(円星)"
+    }
+  ]
+}
