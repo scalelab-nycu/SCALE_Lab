@@ -1,0 +1,83 @@
+{
+  "name_zh": "黃 柏 蒼",
+  "name_en": "Po-Tsang Huang",
+  "nickname": "Bug Huang",
+  "title": "Assistant Professor",
+  "institution": "International College of Semiconductor Technology (ICST)\nNational Chiao Tung University",
+  "photo": "assets/images/bug.png",
+  "contact": {
+    "office": "Room 301, MIRC, 1001 University Road, Hsinchu, Taiwan",
+    "phone": "+886-3-5712121 ext. 59438",
+    "email": "pthuang@nycu.edu.tw"
+  },
+  "education": [
+    {
+      "degree": "Ph.D. Degree",
+      "period": "2004/02–2010/11",
+      "institution": "Department of Electronics Engineering, National Chiao Tung University"
+    },
+    {
+      "degree": "M.S. Degree",
+      "period": "2002/09–2004/02",
+      "institution": "Department of Electronics Engineering, National Chiao Tung University"
+    },
+    {
+      "degree": "B.S. Degree",
+      "period": "1997/09–2002/06",
+      "institution": "Department of Electronics Engineering, National Chiao Tung University"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Assistant Professor",
+      "period": "2017.02 ~ now",
+      "institution": "International College of Semiconductor Technology (ICST), NCTU"
+    },
+    {
+      "title": "Visiting Postdoctoral Scholar",
+      "period": "2014.11~2016.11",
+      "institution": "Electrical Engineering Department, UCLA"
+    },
+    {
+      "title": "Associate Research Fellow",
+      "period": "2015.10~2017.01",
+      "institution": "Department of Electrical and Computer Engineering, NCTU"
+    },
+    {
+      "title": "Assistant Research Fellow",
+      "period": "2014.01~2015.10",
+      "institution": "Department of Electrical and Computer Engineering, NCTU"
+    },
+    {
+      "title": "Assistant Research Fellow",
+      "period": "2011.01~2013.12",
+      "institution": "Department of Electronics Engineering, NCTU"
+    }
+  ],
+  "research_interests": [
+    "Acceleration design for AI and machine learning applications",
+    "3D-IC design (Monolithic 3D-IC & TSV 3D-IC)",
+    "Energy-Efficient digital IC (VLSI) design",
+    "Low-power embedded memory design (Latch, SRAM, Register-File, FIFO, CAM/TCAM)",
+    "Computation-in-memory circuits and architecture",
+    "Memory sub-system for heterogeneous multi-core SoC/SiP",
+    "Ultra-low voltage IC design for IoT and biomedical applications",
+    "Accelerator-rich and memory-rich computer architectures for domain-specific computing",
+    "Compression techniques of memory accesses for mmWave wireless communications and Radar"
+  ],
+  "awards": [
+    { "title": "Macronix Outstanding Chair Professor", "year": "2021-2023" },
+    { "title": "陽明交通大學醫學系教學優良教師", "year": "2021" },
+    { "title": "陽明交通大學優良教學獎", "year": "2021" },
+    { "title": "陽明交通大學績優導師", "year": "2021" },
+    { "title": "Excellent Young Researcher Project Award, Ministry of Science and Technology (MOST), Taiwan", "year": "2020-2023" },
+    { "title": "Future Technology Award, Ministry of Science and Technology (MOST), Taiwan", "year": "Dec. 2019" },
+    { "title": "TSIA Young Researcher Award, Taiwan Semiconductor Industry Association (TSIA)", "year": "2016" },
+    { "title": "Outstanding Chip Design Award, National Chip Implementation Center (CIC), Taiwan", "year": "2014" },
+    { "title": "Best Integrated research Project Award, National Science Council (NSC), Taiwan", "year": "2010" },
+    { "title": "High Achievement of 2010 Ph.D. Dissertation, Institute of Electronics, NCTU", "year": "2010" },
+    { "title": "Ph.D. Teaching Assistant Scholarship, National Chiao Tung University (NCTU)", "year": "2009" },
+    { "title": "Outstanding Oral Paper Award, Electronics Technology Symposium (ETS)", "year": "2009" },
+    { "title": "Student Outstanding Research Award, MOEA/DoIT", "year": "2005" }
+  ]
+}

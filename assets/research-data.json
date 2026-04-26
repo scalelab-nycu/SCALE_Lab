@@ -1,0 +1,40 @@
+{
+  "goal": "Our major research goal for the next decade is to explore pioneering \"sustainable circuits and systems\", focusing on carbon-aware system-design-technology co-optimization, carbon-aware computing, energy-efficient design techniques and methodologies of system integration for both power-limited and energy-limited applications. Our research spans across multiple levels of design abstraction from solid-state circuits, architectures and systems.",
+  "areas": [
+    {
+      "title": "SoC/SiP Architecture/Platform",
+      "subtitle": "for IoT, AI & Communication Applications",
+      "items": [
+        { "title": "Carbon-aware system-design-technology co-optimization", "bullets": [] },
+        { "title": "Accelerator design for neural networks using 3D-SRAM or 3D-DRAM", "bullets": [] },
+        { "title": "Hierarchical configurable interconnect with 3D-SRAM for memory-centric computing", "bullets": [] },
+        { "title": "Fault-tolerant 3D-DRAM controller", "bullets": [] },
+        { "title": "Memory sub-system for heterogeneous multi-core SoC/SiP", "bullets": [] },
+        { "title": "Accelerator-rich and memory-rich computer architectures for domain-specific computing", "bullets": [] },
+        { "title": "System-level power analysis and noise reduction in HPC/3DIC", "bullets": [] },
+        { "title": "Accelerator/reconfigurable architecture for SDR or resilient wireless network", "bullets": [] }
+      ]
+    },
+    {
+      "title": "Circuit/Technology Co-Design",
+      "subtitle": "using Monolithic/TSV 3DIC, Emerging Memory & Devices",
+      "items": [
+        {
+          "title": "Low-power high-density embedded memory design and diagnosis methodology",
+          "bullets": ["SRAM", "Register-File", "FIFO", "CAM/TCAM"]
+        },
+        {
+          "title": "Computation-in-memory or in-memory searching engine for neural networks",
+          "bullets": ["SRAM", "ReRAM", "FeFET", "FeRAM"]
+        },
+        { "title": "Fault/Age-Aware Memory Design", "bullets": [] },
+        { "title": "Energy-Efficient digital IC (VLSI) design using emerging memory & devices", "bullets": [] },
+        {
+          "title": "Power management and data communications for 3D-IC",
+          "bullets": ["M3D (Monolithic 3D)", "TSV 3D-IC"]
+        },
+        { "title": "Ultra-low voltage IC design for IoT and biomedical applications", "bullets": [] }
+      ]
+    }
+  ]
+}
