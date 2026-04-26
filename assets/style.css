@@ -25,37 +25,33 @@ body { background: var(--bg); color: var(--fg); }
 header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); z-index: 50; }
 .nav { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; }
 
-/* Logo styling */
+/* Logo — clamp 讓所有螢幕尺寸等比縮放，不再需要 media query 個別設定 */
 .logo {
-  height: 120px;
+  height: clamp(80px, 4.5vw, 100px);
   width: auto;
   transition: opacity 0.2s ease;
   flex-shrink: 0;
 }
 
-.logo:hover {
-  opacity: 0.8;
-}
+.logo:hover { opacity: 0.8; }
 
-.brand { 
-  display: flex; 
-  align-items: center; 
-  gap: 12px; 
-  font-weight: 700; 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: clamp(6px, 1vw, 20px);
+  font-weight: 700;
 }
 
 .brand a {
   color: var(--fg);
   text-decoration: none;
-  font-size: 1.2rem;   
+  font-size: clamp(1.2rem, 1.2vw, 1.6rem);
 }
 
-.brand a:hover {
-  opacity: 0.8;
-}
+.brand a:hover { opacity: 0.8; }
 
-nav ul { display: flex; gap: 18px; list-style: none; padding: 0; margin: 0; }
-nav a { padding: 8px 10px; border-radius: 10px; font-size: 1.2rem; color: var(--muted); }
+nav ul { display: flex; gap: clamp(4px, 1vw, 18px); list-style: none; padding: 0; margin: 0; }
+nav a { padding: 8px clamp(6px, 0.8vw, 12px); border-radius: 10px; font-size: clamp(1.2rem, 1vw, 1.6rem); color: var(--muted); }
 nav a:hover, nav a.active { color: var(--fg); background: color-mix(in oklab, var(--primary-weak) 50%, transparent); }
 .hamburger { display: none; border: 1px solid var(--border); border-radius: 12px; padding: 8px 10px; background: transparent; color: var(--fg); }
 
@@ -63,12 +59,6 @@ nav a:hover, nav a.active { color: var(--fg); background: color-mix(in oklab, va
   nav ul { display: none; }
   nav ul.open { display: grid; gap: 10px; padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; position: absolute; right: 4vw; top: 56px; box-shadow: var(--shadow); }
   .hamburger { display: block; }
-  .logo { height: 28px; }
-}
-
-@media (max-width: 640px) {
-  .logo { height: 24px; }
-  .brand { gap: 8px; }
 }
 
 /* ===== Cards & Grid ===== */
@@ -78,12 +68,6 @@ nav a:hover, nav a.active { color: var(--fg); background: color-mix(in oklab, va
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow); overflow: clip; }
 .card .content { padding: 18px; }
 .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
-/*
-.card:hover {
-  box-shadow: 0 6px 18px rgba(0, 46, 250, 0.08);
-  transform: translateY(-1px);
-}
-*/
 .muted { color: var(--muted); }
 .tag { padding: 6px 10px; border-radius: 6px; background: color-mix(in oklab, var(--primary-weak) 55%, transparent); border: 1px solid var(--border); font-size: .88rem; }
 .badge { padding: 6px 10px; border: 1px dashed var(--border); border-radius: 999px; font-size: .85rem; color: var(--muted); }
@@ -95,11 +79,8 @@ nav a:hover, nav a.active { color: var(--fg); background: color-mix(in oklab, va
 
 /* ===== People ===== */
 .person { display: grid; grid-template-columns: 86px 1fr; gap: 14px; align-items: center; }
-/* Hide the photo
-.avatar { width: 86px; aspect-ratio: 1/1; border-radius: 16px; background: linear-gradient(135deg, #c7d2fe, #e9d5ff); border: 1px solid var(--border); overflow: hidden; }
-*/
 .avatar { display: none; }
-.person, .person.hero { grid-template-columns: 1fr; } /* 單欄 */
+.person, .person.hero { grid-template-columns: 1fr; }
 .role { font-size: .9rem; color: var(--muted); }
 
 /* ===== Forms ===== */
