@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="assets/style.css" />
 
   <style>
+    /* ── People page 獨立色系 ── */
+    [data-page="people"] {
+      --people-primary: #6366f1;
+      --people-primary-strong: #4f46e5;
+      --people-primary-weak: #eef2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      [data-page="people"] {
+        --people-primary: #818cf8;
+        --people-primary-strong: #a5b4fc;
+        --people-primary-weak: #1e1b4b;
+      }
+    }
+
     /* ── Current Students Cards ── */
     .member-grid {
       display: grid;
@@ -44,7 +58,7 @@
       width: 130px;
       min-width: 130px;
       height: 160px;
-      background: var(--primary-weak);
+      background: var(--people-primary-weak);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -85,7 +99,7 @@
       align-items: center;
       gap: 6px;
       font-size: 0.85rem;
-      color: var(--primary);
+      color: var(--people-primary);
       text-decoration: none;
       word-break: break-all;
       margin-top: 4px;
@@ -113,7 +127,7 @@
     }
 
     .people-table tbody tr:hover {
-      background: var(--primary-weak);
+      background: var(--people-primary-weak);
     }
 
     .people-table tbody tr:last-child td {
@@ -143,13 +157,13 @@
     }
 
     .degree-phd {
-      background: color-mix(in oklab, var(--primary) 15%, transparent);
-      color: var(--primary);
+      background: color-mix(in oklab, var(--people-primary) 15%, transparent);
+      color: var(--people-primary);
     }
 
     .degree-ms {
-      background: color-mix(in oklab, var(--primary) 10%, transparent);
-      color: var(--primary);
+      background: color-mix(in oklab, var(--people-primary) 10%, transparent);
+      color: var(--people-primary);
     }
 
     .td-thesis {

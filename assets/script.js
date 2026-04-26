@@ -1,8 +1,3 @@
-
-// Mobile menu toggle
-const menuBtn = document.getElementById('menuBtn');
-const menu = document.getElementById('menu');
-menuBtn?.addEventListener('click', () => menu.classList.toggle('open'));
 // ── Inject shared header & footer ──────────────────────────
 const HEADER_HTML = `
 <div class="container nav">
@@ -32,9 +27,15 @@ if (headerEl) headerEl.innerHTML = HEADER_HTML;
 
 const footerEl = document.querySelector('footer');
 if (footerEl) footerEl.innerHTML = FOOTER_HTML;
-// ────────────────────────────────────────────────────────────
 
-// 以下保留原本的程式碼...
+// Mobile menu toggle
+const menuBtn = document.getElementById('menuBtn');
+const menu = document.getElementById('menu');
+
+menuBtn?.addEventListener('click', () => {
+  menu?.classList.toggle('open');
+});
+
 // Active nav by data-page
 const page = document.body.dataset.page;
 if (page) {
@@ -51,8 +52,9 @@ document.documentElement.style.scrollBehavior = 'smooth';
 
 // Fetch site data
 async function loadSiteData() {
-  const res = await fetch('assets/site-data.json', {cache: 'no-store'});
+  const res = await fetch('assets/site-data.json', { cache: 'no-store' });
   if (!res.ok) throw new Error('Failed to load site-data.json');
   return await res.json();
 }
+
 window.loadSiteData = loadSiteData;
