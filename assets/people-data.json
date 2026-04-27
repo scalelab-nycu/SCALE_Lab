@@ -1,11 +1,6 @@
 {
   "current": [
-    { "name": "黃昱浤", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
-    { "name": "黃威誌", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
-    { "name": "呂昀庭", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
-    { "name": "林欣穎", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
-    { "name": "葉舜良", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
-    { "name": "黃郁珊", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
+ 
     { "name": "黃資涵", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
     { "name": "莊涵傑", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
     { "name": "胡采喬", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "","email": "", "photo": "" },
@@ -30,18 +25,60 @@
     { "name": "Ranjan", "degree": "M.S.", "thesis_zh": "", "thesis_en": "", "position": "", "email": "", "photo": "" }
   ],
   "alumni": [
+
+
+    { "name": "呂昀庭", "degree": "M.S.", "year": "2026",
+       "thesis_zh": "具多位元精確比對之全數位 FeRAM 記憶體內相似度 搜尋引擎", 
+       "thesis_en": "An All-Digital FeRAM-based In-Memory Similarity Search Engine with Multi-bit Exact Matching", 
+       "position" : ""},
+
+    { "name": "林欣穎", "degree": "M.S.", "year": "2026",
+      "thesis_zh": "數位記憶體內運算架構之模組分析模型與資料流導向設計空間探索", 
+      "thesis_en": "Analytical Macro-Level Model and Dataflow-Aware Design Exploration for Digital Compute-in-Memory Architectures", 
+      "position": "TSMC(台積電)" },
+ 
+    { "name": "黃威誌", "degree": "M.S.", "year": "2026",
+      "thesis_zh": "結合敏感度導向合成資料之自動化 BSIM-CMG 參數萃取器應用於 GAA 與 CFET 技術", 
+      "thesis_en": "An Automatic BSIM-CMG Parameter Extractor with Sensitivity-Driven Synthetic Data for GAA and CFET Technologies", 
+      "position": "TSMC(台積電)"},
+
+    { 
+      "name": "汪哿令", "degree": "M.S.", "year": "2025",
+      "thesis_zh": "基於互補式鐵電晶體之漸進式高維度記憶體內搜尋引擎", 
+      "thesis_en": "CFeFET-based Progressive Hyperdimensional In-Memory Search Engine", 
+      "position":  "Richtek(立錡科技)"  
+    },
+
+    { 
+      "name": "黃昱浤", "degree": "M.S.", "year": "2025",
+      "thesis_zh": "應用於高效自回歸推論之 16 奈米 BitNet 加速器設計", 
+      "thesis_en": "A 16nm 0.708 TOPS/mm2 BitNet Accelerator with Hybrid Ternary-Booth Multipliers for Efficient Autoregressive Inference", 
+      "position":  "Novatek(聯詠科技)"  
+    },
+
+    { "name": "葉舜良", "degree": "M.S.", "year": "2025",
+      "thesis_zh": "用於近內存計算 AI 加速器之分散式 3D 堆疊式記憶體控制器", 
+      "thesis_en": "Distributed 3D-Stacked DRAM Controller for Processing-Near-Memory AI Accelerator", 
+      "position": "Macronix(旺宏電子)"},
+
+    { "name": "黃郁珊", "degree": "M.S.", "year": "2025",
+      "thesis_zh": "記憶體-邏輯層整合近記憶體運算中分散式三維堆疊動態隨機存取記憶體控制器之容錯方法", 
+      "thesis_en": "Fault-Tolerant Methods for Distributed 3D-Stacked DRAM Controller in DRAM-on-Logic Near-Memory Computing", 
+      "position": "NVDIA"
+    },
+
     {
       "name": "粘佑均", "degree": "M.S.", "year": "2024",
       "thesis_zh": "應用於鐵電電晶體記憶體內運算模組之非線性時間數位轉換器",
       "thesis_en": "Non-Linear Tunable RO-based Time-to-Digital Converter for FeFET-based Computation-in-Memory Macro",
-      "position": "聯詠"
+      "position": "Novatek(聯詠科技)"
     },
 
     {
       "name": "李宗育", "degree": "M.S.", "year": "2024",
       "thesis_zh": "基於16奈米FinFET及近似加法樹實現高能效數位式記憶體內運算電路",
       "thesis_en": "An Efficient Digital Computation-in-Memory (D-CIM) Macro with Approximate Adder Tree using 16nm FinFET Technology",
-      "position": "聯詠"
+      "position": "Novatek(聯詠科技)"
     },
     {
       "name": "沈俊宇", "degree": "M.S.", "year": "2024",
@@ -53,25 +90,25 @@
       "name": "洪侑廷", "degree": "M.S.", "year": "2024",
       "thesis_zh": "利用互補式鐵電電晶體實現具變異容忍及抗噪性之內容可定址記憶體設計",
       "thesis_en": "Variation-tolerant and Noise-Immune Content-Addressable Memory Design using Complementary FeFET",
-      "position": "台積電"
+      "position": "TSMC(台積電)"
     },
     {
       "name": "陳怡安", "degree": "M.S.", "year": "2024",
       "thesis_zh": "利用壓縮超維度計算技術實現高能效內存檢索引擎",
       "thesis_en": "Energy-Efficient In-Memory Retrieval Engine with Compressed Hyperdimensional Computing Techniques",
-      "position": "聯詠"
+      "position": "Novatek(聯詠科技)"
     },
     {
       "name": "陳磊", "degree": "M.S.", "year": "2024",
       "thesis_zh": "基於三維動態隨機存取記憶體庫級優化之16奈米高面積效能擴散模型加速器",
       "thesis_en": "16nm Area-Efficient Accelerator Design with 3D-DRAM and Bank-Level Dataflow Optimization for Diffusion Models",
-      "position": "台積電"
+      "position": "TSMC(台積電)"
     },
     {
       "name": "黃志棋", "degree": "M.S.", "year": "2024",
       "thesis_zh": "數位記憶體內運算模組之分析模型與設計探索",
       "thesis_en": "Analytical Model and Design Exploration of Digital Computing-In-Memory Macros",
-      "position": "聯詠科技"
+      "position": "Novatek(聯詠科技)"
     },
     {
       "name": "賴怡廷", "degree": "M.S.", "year": "2024",
@@ -83,31 +120,31 @@
       "name": "王聖博", "degree": "M.S.", "year": "2023",
       "thesis_zh": "應用於3D NAND Flash內存快取記憶體中具預測控制機制之分散式數位電源穩壓電路",
       "thesis_en": "Distributed Digital Voltage Regulation with Predicted Control for Cache in 3D NAND Flash",
-      "position": "旺宏科技"
+      "position": "Macronix(旺宏電子)"
     },
     {
       "name": "倪健嘉", "degree": "M.S.", "year": "2023",
       "thesis_zh": "基於16奈米FinFET實現具可變區塊之高能效數位式記憶體浮點數內運算電路設計",
       "thesis_en": "Energy-Efficient Digital Floating-Point Computation-in-Memory Macro Design with Flexible Blocks using 16nm FinFET Technology",
-      "position": "台積電"
+      "position": "TSMC(台積電)"
     },
     {
       "name": "林政誠", "degree": "M.S.", "year": "2023",
       "thesis_zh": "基於純整數量化注意力模組之28奈米ViT加速器設計",
       "thesis_en": "A 28nm Vision Transformer Accelerator with Integer-Only Quantized Attention Block",
-      "position": "聯詠"
+      "position": "Novatek(聯詠科技)"
     },
     {
       "name": "黃良德", "degree": "M.S.", "year": "2023",
       "thesis_zh": "應用於非揮發性記憶體內運算加速器之非規則操作單元壓縮技術",
       "thesis_en": "Irregular Operation-Unit-based Compression for Non-Volatile Computation-in-Memory Accelerator",
-      "position": "高通"
+      "position": "Qualcomm(高通)"
     },
     {
       "name": "廖苡瑄", "degree": "M.S.", "year": "2023",
       "thesis_zh": "符合3D NAND Flash規格的高速階層式單端讀取Cache架構",
       "thesis_en": "High-Speed Cache Design with Hierarchal Single-ended Read Scheme for 3D NAND Flash",
-      "position": "聯詠"
+      "position": "Novatek(聯詠科技)"
     },
     {
       "name": "林庭安", "degree": "M.S.", "year": "2023",
@@ -119,13 +156,13 @@
       "name": "余政融", "degree": "M.S.", "year": "2023",
       "thesis_zh": "應用於邊緣裝置遷移學習之28奈米列管線化加速器設計",
       "thesis_en": "A 28nm Row-based Pipelined Accelerator with Multi-bank Buffer Management for On-Device Transfer Learning",
-      "position": "聯詠"
+      "position": "Novatek(聯詠科技)"
     },
     {
       "name": "李婕伶", "degree": "M.S.", "year": "2023",
       "thesis_zh": "基於高架積層型三維技術實現多型態混合式三維標準元件庫及數位式記憶體內運算電路",
       "thesis_en": "Monolithic Hybrid-3D Standard Cell Library with Sandwiched Inter-Metal Layer for 3D Digital Computation-in-Memory Circuits",
-      "position": "聯發科"
+      "position": "MediaTek(聯發科技)"
     },
 
     {
@@ -144,7 +181,7 @@
       "name": "裴翰祥", "degree": "M.S.", "year": "2022",
       "thesis_zh": "應用於邊緣端模擬量化遷移學習之高能效列管線化卷積神經網路訓練加速器",
       "thesis_en": "An Energy-efficient Row-Based Pipelined CNN Training Accelerator for On-Device Transfer Learning with Simulated Quantization",
-      "position": "聯詠"
+      "position": "Novatek(聯詠科技)"
     },
     {
       "name": "楊庭維", "degree": "M.S.", "year": "2022",
@@ -156,7 +193,7 @@
       "name": "黃詠暄", "degree": "M.S.", "year": "2022",
       "thesis_zh": "利用互補式鐵電電晶體不規則查表電路實現高能效數位式記憶體內運算模塊",
       "thesis_en": "Energy-Efficient Digital Computation-in-Memory Macro Design with Irregular Lookup Table using Complementary Ferroelectric FETs",
-      "position": "聯發科"
+      "position": "MediaTek(聯發科技)"
     },
     {
       "name": "許宛庭", "degree": "M.S.", "year": "2022",
