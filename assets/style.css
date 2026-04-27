@@ -8,9 +8,14 @@ a { color: inherit; text-decoration: none; }
 #aboutVision {
   white-space: pre-line;
 }
-.zh { font-size: 1.6em; }
-.en .lab{ font-size: 1em; color: var(--muted); }
+.zh {
+  font-size: 1.6em;
+}
 
+.en,
+.lab {
+  font-size: 1em;
+}
 /* ===== Theme ===== */
 /* :root {
   --bg: #ffffff; --fg: #0f172a; --muted: #64748b; --primary: #79bd9a; --primary-weak: #f1fefe;
