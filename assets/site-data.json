@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated": "2025-09-18",
+    "updated": "2026-04-27",
     "admin_hint": "Edit via admin.html; upload to /assets/site-data.json"
   },
   "research": {
-    "vision": "Pioneering sustainable circuits and systems: carbon-aware co-optimization, carbon-aware computing, and energy-efficient methodologies for power- and energy-limited applications spanning solid-state circuits, architectures, and systems.",
+    "vision": "Our research aims to pioneer sustainable circuits and systems for the next decade, with a focus on carbon-aware system-design-technology co-optimization, carbon-aware computing, and energy-efficient design methodologies for system integration.\n\nWe target both power-limited and energy-limited applications, spanning multiple levels of abstraction from solid-state circuits to architectures and systems.",
     "thrusts": [
       {
         "key": "system",
@@ -21,12 +21,14 @@
           "Accelerator/reconfigurable architectures for SDR and resilient wireless networks"
         ],
         "tags": [
-          "carbon-aware",
+          "carbon-aware computing",
           "SoC/SiP",
+          "3D-SRAM",
           "3D-DRAM",
-          "memory-centric",
+          "memory-centric computing",
           "HPC",
-          "wireless"
+          "3DIC",
+          "wireless systems"
         ]
       },
       {
@@ -43,152 +45,19 @@
         ],
         "tags": [
           "3DIC",
+          "M3D",
+          "TSV",
+          "embedded memory",
           "CIM",
           "ReRAM",
           "FeFET",
-          "ULV",
-          "power management"
+          "FeRAM",
+          "ULV IC"
         ]
       }
     ]
   },
-  "people": [
-    {
-      "name": "Prof. Po-Tsang Huang",
-      "role": "faculty",
-      "about": "PI — Sustainable Circuits & Systems, 3D-IC Design, Energy-Efficient VLSI, Memory-Centric Computing.",
-      "company": "NCTU/NYCU",
-      "institute": "International College of Semiconductor Technology (ICST)",
-      "email": "bughuang@nctu.edu.tw",
-      "tags": ["PI", "Advisor"]
-    },
-    {
-      "name": "Dr. Ada Wang",
-      "role": "faculty", 
-      "about": "Co-PI — Emerging Memories, 3D-IC power delivery.",
-      "company": "NCTU/NYCU",
-      "institute": "International College of Semiconductor Technology (ICST)",
-      "email": "adawang@nctu.edu.tw",
-      "tags": ["Co-PI", "3D-IC"]
-    },
-    {
-      "name": "Chen, Yu-Ting",
-      "role": "phd",
-      "about": "Carbon-intensity-aware scheduling for accelerator clusters.",
-      "year": "2022/09 - 2025 (expected)",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "email": "yutin.cs10@nycu.edu.tw",
-      "tags": ["carbon-aware", "scheduling"]
-    },
-    {
-      "name": "Lin, Bo-Han", 
-      "role": "phd",
-      "about": "3D-SRAM compute-near-memory for CNN inference.",
-      "year": "2021/09 - 2026 (expected)",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "email": "bohan.cs09@nycu.edu.tw",
-      "tags": ["3D-SRAM", "CIM"]
-    },
-    {
-      "name": "Wang, Li-Ming",
-      "role": "phd",
-      "about": "Energy-efficient ReRAM-based accelerators for AI workloads.",
-      "year": "2022/09 - 2025 (expected)",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "email": "liming.cs10@nycu.edu.tw",
-      "tags": ["ReRAM", "AI-accelerator"]
-    },
-    {
-      "name": "吳承祐 Jasper ",
-      "role": "ms",
-      "about": "Machine learning accelerator design with emerging memory technologies.",
-      "year": "2024/09 - now",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "email": "swing.cs13@nycu.edu.tw",
-      "tags": ["ML-accelerator", "emerging-memory"]
-    },
-    {
-      "name": "Lee, Jun-Peng",
-      "role": "ms",
-      "about": "LUT-NN quantization & compiler flow.",
-      "year": "2023/09 - 2024 (expected)",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "email": "junpeng.cs12@nycu.edu.tw",
-      "tags": ["LUT-NN", "QAT"]
-    },
-    {
-      "name": "Wu, Cindy",
-      "role": "ms",
-      "about": "Fault-tolerant DRAM controller for TSV 3D.",
-      "year": "2023/09 - 2024 (expected)",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "email": "cindy.cs12@nycu.edu.tw",
-      "tags": ["DRAM", "fault-tolerant"]
-    },
-    {
-      "name": "Zhang, Wei-Chen",
-      "role": "ms", 
-      "about": "Monolithic 3D power delivery network design.",
-      "year": "2024/09 - 2025 (expected)",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "email": "weichen.cs13@nycu.edu.tw",
-      "tags": ["3D-IC", "power-delivery"]
-    },
-    {
-      "name": "Huang, I-Chun",
-      "role": "alumni",
-      "about": "M.S. 2020 — ASIC design and verification for memory controllers.",
-      "year": "2018/09 - 2020/06",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "company": "MediaTek (Design Engineer)",
-      "tags": ["ASIC", "industry"]
-    },
-    {
-      "name": "Chen, Mei-Lin",
-      "role": "alumni",
-      "about": "M.S. 2019 — 3D-SRAM design for neural network accelerators.",
-      "year": "2017/09 - 2019/06",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "company": "Stanford University (Ph.D. Student)", 
-      "tags": ["PhD", "Systems"]
-    },
-    {
-      "name": "Wu, Tsung-Han",
-      "role": "alumni",
-      "about": "Ph.D. 2021 — Energy-efficient memory design for IoT applications.",
-      "year": "2016/09 - 2021/06",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "company": "Apple (Senior Design Engineer)",
-      "tags": ["industry", "memory-design"]
-    },
-    {
-      "name": "Lin, Shao-Yu",
-      "role": "alumni",
-      "about": "M.S. 2020 — TSV 3D-IC power management and thermal control.",
-      "year": "2018/09 - 2020/06",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "company": "TSMC (Process Engineer)",
-      "tags": ["industry", "3D-IC"]
-    },
-    {
-      "name": "Chang, Wei-Ting",
-      "role": "alumni",
-      "about": "M.S. 2018 — Low-power SRAM design with advanced power gating.",
-      "year": "2016/09 - 2018/06",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "company": "Cadence (R&D Engineer)",
-      "tags": ["industry", "EDA"]
-    },
-    {
-      "name": "Lee, Ming-Hsuan",
-      "role": "alumni",
-      "about": "Ph.D. 2020 — Computation-in-memory architectures for AI applications.",
-      "year": "2015/09 - 2020/06",
-      "institute": "Institute of Computer Science and Engineering, NYCU",
-      "company": "UC Berkeley (Postdoc Researcher)",
-      "tags": ["academia", "CIM"]
-    }
-  ],
+
   "publications": {
     "journal": [
       {

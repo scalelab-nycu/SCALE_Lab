@@ -43,15 +43,17 @@
     <!-- Section 1 -->
     <section id="s1" class="panel hero">
       <div class="container" style="text-align:center;">
-        <h1 class="reveal">Sustainable Circuits and Architectures for Layered Eco-chips Lab</h1>
-        <p id="vision" class="lead reveal" style="margin-inline:auto; max-width:70ch;"></p>
+      <h1 class="reveal hero-title">
+        <span class="zh">永續導向晶片電路與架構實驗室</span><br>
+        <span class="en">Sustainable Circuits and Architectures for Layered Eco-chips Lab</span><br>
+        <span class="lab">NYCU SCALE Lab</span>
+      </h1>
+      
 
         <div class="reveal" style="margin-top:18px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
           <span class="badge">Carbon-Aware</span>
           <span class="badge">3D-IC</span>
-          <span class="badge">Memory-Centric</span>
-          <span class="badge">CIM</span>
-          <span class="badge">ULV</span>
+          <span class="badge">Memory-Centric Computing</span>
         </div>
       </div>
     </section>
@@ -65,16 +67,17 @@
             <p id="aboutVision" class="reveal"></p>
 
             <div class="line"></div>
-            <p class="muted reveal">Lab: 國立陽明交通大學 電子資訊研究大樓 B1 </p>
+            <p class="muted reveal">Lab location: 國立陽明交通大學 電子資訊研究大樓 B1 </p>
           </div>
 
           <div class="col-6 card reveal">
             <div class="content">
               <h3>Highlights</h3>
               <ul>
-                <li>Cross-layer projects from materials to systems with strong publication potential.</li>
-                <li>Hands-on: FPGA/ASIC flows, Python/Matlab tooling, solid cloud infra.</li>
-                <li>Mentoring: weekly 1-on-1, monthly OKRs, academic & career coaching.</li>
+                  <li>Carbon-aware system–design–technology co-optimization for sustainable circuits and systems.</li>
+                  <li>Memory-centric computing platforms using 3D-SRAM, 3D-DRAM, and emerging memory technologies.</li>
+                  <li>Energy-efficient SoC/SiP architectures for IoT, AI, communication, and biomedical applications.</li>
+                  <li>Cross-layer research spanning circuits, memories, architectures, and system integration.</li>
               </ul>
             </div>
           </div>
@@ -120,7 +123,7 @@
 
     // Load lab vision & highlights
     loadSiteData().then(data => {
-      document.getElementById('vision').textContent = data.research.vision;
+      // document.getElementById('vision').textContent = data.research.vision;
       document.getElementById('aboutVision').textContent = data.research.vision;
 
       const highlights = document.getElementById('highlights');
