@@ -1,58 +1,56 @@
 {
   "name_zh": "黃 柏 蒼",
-  "name_en": "Po-Tsang (Bug) Huang",
-  "title": "Associate Professor",
+  "name_en": "Po-Tsang Huang",
   "nickname": "Bug Huang",
-  "institution": "Institute of Electronics & Depaprtment of Electronics and Electrical Engineering\nNational Chiao Tung University",
+  "title": "Assistant Professor",
+  "institution": "International College of Semiconductor Technology (ICST)\nNational Chiao Tung University",
   "photo": "assets/images/bug.png",
   "contact": {
-    "office": "Room 534, Eginnering Building 4, 1001 University Road, Hsinchu, Taiwan",
-    "phone": "+886-3-5712121 ext. 54145",
-    "email": "bughuang@nycu.edu.tw"
+    "office": "Room 301, MIRC, 1001 University Road, Hsinchu, Taiwan",
+    "phone": "+886-3-5712121 ext. 59438",
+    "email": "pthuang@nycu.edu.tw"
   },
   "education": [
     {
       "degree": "Ph.D. Degree",
+      "period": "2004/02–2010/11",
       "institution": "Department of Electronics Engineering, National Chiao Tung University"
     },
     {
       "degree": "M.S. Degree",
+      "period": "2002/09–2004/02",
       "institution": "Department of Electronics Engineering, National Chiao Tung University"
     },
     {
-      "degree": "B.S. Degree"
+      "degree": "B.S. Degree",
+      "period": "1997/09–2002/06",
       "institution": "Department of Electronics Engineering, National Chiao Tung University"
     }
   ],
   "experience": [
     {
-      "title": "Associate Professor",
-      "period": "2025 ~ now",
-      "institution": "Institute of Electronics & Dept of Electronics and Elec. Engr., NCTU"
-    },
-    {
-      "title": "Assistant/Associate Professor",
-      "period": "2017- 2025",
+      "title": "Assistant Professor",
+      "period": "2017.02 ~ now",
       "institution": "International College of Semiconductor Technology (ICST), NCTU"
     },
     {
       "title": "Visiting Postdoctoral Scholar",
-      "period": "2014-2016",
+      "period": "2014.11~2016.11",
       "institution": "Electrical Engineering Department, UCLA"
     },
     {
       "title": "Associate Research Fellow",
-      "period": "2015-2017",
+      "period": "2015.10~2017.01",
       "institution": "Department of Electrical and Computer Engineering, NCTU"
     },
     {
       "title": "Assistant Research Fellow",
-      "period": "2014-2015",
+      "period": "2014.01~2015.10",
       "institution": "Department of Electrical and Computer Engineering, NCTU"
     },
     {
       "title": "Assistant Research Fellow",
-      "period": "2011-2013",
+      "period": "2011.01~2013.12",
       "institution": "Department of Electronics Engineering, NCTU"
     }
   ],
