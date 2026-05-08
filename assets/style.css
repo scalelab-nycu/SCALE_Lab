@@ -138,3 +138,32 @@ footer { padding: 40px 0; border-top: 1px solid var(--border); color: var(--mute
   .reveal { transition: none; opacity: 1; transform: none; }
   .scroll-cue svg { animation: none; }
 }
+
+/* ===== Publication page compact spacing ===== */
+body[data-page="publication"] .section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+body[data-page="publication"] .publication-section {
+  margin-bottom: 28px;
+}
+
+body[data-page="publication"] .section-header {
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+}
+
+body[data-page="publication"] .pub-list {
+  font-size: 0.92rem;
+  line-height: 1.38;
+}
+
+body[data-page="publication"] .pub-list li {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+body[data-page="publication"] .pub-list li::before {
+  top: 6px;
+}
