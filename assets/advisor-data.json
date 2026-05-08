@@ -18,19 +18,24 @@
     {
       "degree": "M.S. Degree",
       "period": "2002–2004",
-      "institution": "Department of Electronics Engineering, National Chiao Tung University"
+      "institution": "Institute of Electronics, National Chiao Tung University"
     },
     {
       "degree": "B.S. Degree",
       "period": "1997–2002",
-      "institution": "Department of Electronics Engineering, National Chiao Tung University"
+      "institution": "Institute of Electronics, National Chiao Tung University"
     }
   ],
   "experience": [
     {
-      "title": "Assistant Professor",
-      "period": "2017 ~ now",
-      "institution": "International College of Semiconductor Technology (ICST), NCTU"
+      "title": "Associate Professor",
+      "period": "2025-now",
+      "institution": "Institute of Electronics & Department of Electronics and Electrical Engineering, NYCU"
+    },
+    {
+      "title": "Assistant/Associate Professor",
+      "period": "2017-2025",
+      "institution": "International College of Semiconductor Technology (ICST), NCTU/NYCU"
     },
     {
       "title": "Visiting Postdoctoral Scholar",
