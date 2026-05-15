@@ -45,6 +45,21 @@
       margin-top: 6px;
       margin-bottom: 8px;
     }
+    .about-layout {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+    .about-qr {
+      width: 150px;
+      height: 150px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px;
+      box-shadow: var(--shadow);
+    }
     #aboutVision {
       white-space: normal;
       margin-bottom: 0;
@@ -53,6 +68,16 @@
     }
     #highlights {
       margin-top: 6px !important;
+    }
+    @media (max-width: 700px) {
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .about-qr {
+        width: 130px;
+        height: 130px;
+      }
     }
   </style>
 </head>
@@ -77,8 +102,13 @@
     <!-- Section 2 -->
     <section id="s2" class="panel alt">
       <div class="container">
-        <h2 class="reveal">About SCALE Lab</h2>
-        <p id="aboutVision" class="reveal"></p>
+        <div class="about-layout">
+          <img class="about-qr reveal" src="data:image/png;base64,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" alt="SCALE Lab QR code">
+          <div class="about-text">
+            <h2 class="reveal">About SCALE Lab</h2>
+            <p id="aboutVision" class="reveal"></p>
+          </div>
+        </div>
       </div>
     </section>
 
