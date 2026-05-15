@@ -56,7 +56,7 @@ body { background: var(--bg); color: var(--fg); }
 
 /* ===== Header / Nav ===== */
 header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); z-index: 50; }
-.nav { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; }
 
 /* Logo — clamp 讓所有螢幕尺寸等比縮放，不再需要 media query 個別設定 */
 .logo {
@@ -66,6 +66,12 @@ header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); bac
   flex-shrink: 0;
 }
 
+.logo-full-name {
+  height: clamp(52px, 7vw, 82px);
+  max-width: min(420px, 46vw);
+  object-fit: contain;
+}
+
 .logo:hover { opacity: 0.8; }
 
 .brand {
@@ -73,6 +79,12 @@ header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); bac
   align-items: center;
   gap: clamp(6px, 1vw, 20px);
   font-weight: 700;
+}
+
+.brand-logo-link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
 }
 
 .brand a {
@@ -92,6 +104,7 @@ nav a:hover, nav a.active { color: var(--fg); background: color-mix(in oklab, va
   nav ul { display: none; }
   nav ul.open { display: grid; gap: 10px; padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; position: absolute; right: 4vw; top: 56px; box-shadow: var(--shadow); }
   .hamburger { display: block; }
+  .logo-full-name { max-width: 64vw; }
 }
 
 /* ===== Cards & Grid ===== */
