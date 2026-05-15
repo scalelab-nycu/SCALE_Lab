@@ -9,19 +9,22 @@
   <link rel="stylesheet" href="assets/style.css?v=4" />
   <style>
     main#snap {
-      height: 100svh;
-      overflow-y: auto;
-      scroll-snap-type: y mandatory;
+      min-height: 100svh;
+      overflow-y: visible;
       scroll-behavior: smooth;
     }
     section.panel {
-      min-height: 100svh;
-      scroll-snap-align: start;
+      min-height: auto;
       display: grid;
       place-items: center;
-      padding: 84px 6vw 6vw;
+      padding: 52px 6vw;
       position: relative;
       isolation: isolate;
+    }
+    section.panel.hero {
+      min-height: 72svh;
+      padding-top: 72px;
+      padding-bottom: 48px;
     }
     .panel.hero {
       background:
@@ -30,6 +33,20 @@
     }
     .panel.alt {
       background: color-mix(in oklab, var(--card) 85%, transparent);
+    }
+    .panel .content {
+      padding: 14px 16px;
+    }
+    .panel h2 {
+      margin-bottom: 8px;
+    }
+    .panel p,
+    .panel ul {
+      margin-top: 6px;
+      margin-bottom: 8px;
+    }
+    #highlights {
+      margin-top: 6px !important;
     }
   </style>
 </head>
@@ -50,7 +67,7 @@
       </h1>
       
 
-        <div class="reveal" style="margin-top:18px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <div class="reveal" style="margin-top:14px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
           <span class="badge">Carbon-Aware</span>
           <span class="badge">3D-IC</span>
           <span class="badge">Memory-Centric Computing</span>
@@ -118,7 +135,7 @@
           e.target.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
         }
       }
-    }, { root: document.querySelector('main#snap'), threshold: [0.5] });
+    }, { root: null, threshold: [0.5] });
     panels.forEach(p => io.observe(p));
 
     // Load lab vision & highlights
