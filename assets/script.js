@@ -2,8 +2,9 @@
 const HEADER_HTML = `
 <div class="container nav">
   <div class="brand">
-    <img src="assets/images/logo.svg" alt="SCALE Lab Logo" class="logo">
-    <a href="index.html" aria-label="Go to home">SCALE Lab</a>
+    <a href="index.html" aria-label="Go to home" class="brand-logo-link">
+      <img src="assets/images/logo_with_full_name.svg" alt="SCALE Lab Logo" class="logo logo-full-name">
+    </a>
   </div>
   <nav>
     <button class="hamburger" aria-label="Open navigation menu" id="menuBtn">☰</button>
