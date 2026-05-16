@@ -4,7 +4,7 @@ const HEADER_HTML = `
   <div class="brand">
     <a href="index.html" aria-label="Go to home" class="brand-logo-link">
       <img src="assets/images/logo.svg" alt="SCALE Lab Logo" class="logo">
-      <span class="brand-full-name"><span>Sustainable Circuits and Architectures</span><span>for Layered Eco-chips Lab</span></span>
+      <span class="brand-full-name"><span>Sustainable Circuits and Architectures</span><span>for Layered Eco-chips (SCALE) Lab</span></span>
     </a>
   </div>
   <nav>
