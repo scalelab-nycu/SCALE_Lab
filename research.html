@@ -14,6 +14,20 @@
     }
     .research-vision h3 { margin: 0 0 16px; color: var(--primary); font-size: 1.3rem; }
     .research-vision p { font-size: 1.05rem; line-height: 1.7; margin: 0; }
+    .research-overview-figure {
+      margin: 24px 0 0;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+    .research-overview-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
     .research-area { margin-bottom: 40px; }
     .area-header {
       background: linear-gradient(135deg, var(--primary-weak), var(--card));
@@ -38,6 +52,7 @@
       .area-header { padding: 20px 24px; }
       .area-content { padding: 24px 20px; }
       .research-item { padding: 14px 16px; }
+      .research-overview-figure { padding: 6px; }
     }
   </style>
 </head>
@@ -89,6 +104,9 @@
           <div class="research-vision">
             <h3>Research Goal</h3>
             <p>${d.goal}</p>
+            <figure class="research-overview-figure">
+              <img src="assets/images/research_overview.svg" alt="Sustainable memory-centric computing research overview">
+            </figure>
           </div>
           ${areas}`;
       })
