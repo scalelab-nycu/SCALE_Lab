@@ -56,10 +56,10 @@ header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); bac
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  max-width: 460px;
+  max-width: 420px;
   color: #166534;
-  font-size: clamp(1.05rem, 1.45vw, 1.45rem);
-  line-height: 1.12;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  line-height: 1.1;
   font-weight: 800;
   letter-spacing: -0.01em;
 }
@@ -78,7 +78,7 @@ nav a:hover, nav a.active { color: var(--fg); background: color-mix(in oklab, va
   .hamburger { display: block; }
   .logo { height: 57px !important; }
   .brand-logo-link { gap: 10px; }
-  .brand-full-name { max-width: 300px; font-size: 0.9rem; }
+  .brand-full-name { max-width: 280px; font-size: 0.8rem; }
 }
 .grid { display: grid; grid-template-columns: repeat(12,1fr); gap: 18px; }
 .col-4 { grid-column: span 4; } .col-6 { grid-column: span 6; } .col-12 { grid-column: span 12; }
