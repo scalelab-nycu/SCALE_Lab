@@ -55,20 +55,21 @@ body { background: var(--bg); color: var(--fg); }
 .section p.lead { color: var(--muted); margin-top: 0; }
 
 /* ===== Header / Nav ===== */
-header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); z-index: 50; }
-.nav { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; }
+header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); z-index: 50; overflow: visible; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; min-height: 116px; overflow: visible; }
 
 .logo {
   width: auto;
   height: auto;
+  max-width: none;
   transition: opacity 0.2s ease;
   flex-shrink: 0;
 }
 
 .logo-full-name {
   display: block;
-  width: min(534px, 46vw);
-  height: auto;
+  height: 104px;
+  width: auto;
   max-width: none;
   max-height: none;
   object-fit: contain;
@@ -82,6 +83,8 @@ header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); bac
   gap: clamp(6px, 1vw, 20px);
   font-weight: 700;
   min-width: 0;
+  flex-shrink: 0;
+  overflow: visible;
 }
 
 .brand-logo-link {
@@ -99,16 +102,18 @@ header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); bac
 
 .brand a:hover { opacity: 0.8; }
 
+nav { flex-shrink: 0; }
 nav ul { display: flex; gap: clamp(4px, 1vw, 18px); list-style: none; padding: 0; margin: 0; }
 nav a { padding: 8px clamp(6px, 0.8vw, 12px); border-radius: 10px; font-size: clamp(1.2rem, 1vw, 1.6rem); color: var(--muted); }
 nav a:hover, nav a.active { color: var(--fg); background: color-mix(in oklab, var(--gray) 50%, transparent); }
 .hamburger { display: none; border: 1px solid var(--border); border-radius: 12px; padding: 8px 10px; background: transparent; color: var(--fg); }
 
 @media (max-width: 880px) {
+  .nav { min-height: 92px; }
   nav ul { display: none; }
-  nav ul.open { display: grid; gap: 10px; padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; position: absolute; right: 4vw; top: 56px; box-shadow: var(--shadow); }
+  nav ul.open { display: grid; gap: 10px; padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; position: absolute; right: 4vw; top: 92px; box-shadow: var(--shadow); }
   .hamburger { display: block; }
-  .logo-full-name { width: min(360px, 66vw); }
+  .logo-full-name { height: 78px; width: auto; max-width: none; }
 }
 
 /* ===== Cards & Grid ===== */
