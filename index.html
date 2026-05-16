@@ -16,11 +16,11 @@
     .panel .content { padding: 14px 16px; }
     .panel h2 { margin-bottom: 8px; }
     .panel p, .panel ul { margin-top: 6px; margin-bottom: 8px; }
-    .about-layout { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 48px; align-items: start; }
-    .about-qr { width: 230px; height: 230px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 8px; box-shadow: var(--shadow); object-fit: contain; }
+    .about-layout { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 48px; align-items: center; }
+    .about-qr { width: 230px; height: 230px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 8px; box-shadow: var(--shadow); object-fit: contain; align-self: center; }
     #aboutVision { white-space: normal; margin-bottom: 0; font-size: 1.15rem; line-height: 1.65; }
     #highlights { margin-top: 6px !important; }
-    @media (max-width: 700px) { .about-layout { grid-template-columns: 1fr; gap: 18px; } .about-qr { width: 150px; height: 150px; } }
+    @media (max-width: 700px) { .about-layout { grid-template-columns: 1fr; gap: 18px; align-items: start; } .about-qr { width: 150px; height: 150px; } }
   </style>
 </head>
 <body data-page="home">
