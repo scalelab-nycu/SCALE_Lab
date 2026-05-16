@@ -56,10 +56,10 @@ body { background: var(--bg); color: var(--fg); }
 
 /* ===== Header / Nav ===== */
 header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); z-index: 50; overflow: visible; }
-.nav { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; min-height: 92px; overflow: visible; gap: 18px; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; min-height: 56px; overflow: visible; gap: 18px; }
 
 .logo {
-  height: 76px;
+  height: 19px;
   width: auto;
   max-width: none;
   max-height: none;
@@ -80,21 +80,28 @@ header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); bac
 .brand-logo-link {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
-  line-height: 1.1;
+  gap: 8px;
+  line-height: 1.05;
   overflow: visible;
   color: #166534;
   text-decoration: none;
 }
 
 .brand-full-name {
-  display: block;
-  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 220px;
   color: #166534;
-  font-size: clamp(1.05rem, 1.45vw, 1.45rem);
-  line-height: 1.12;
+  font-size: clamp(0.58rem, 0.72vw, 0.72rem);
+  line-height: 1.08;
   font-weight: 800;
   letter-spacing: -0.01em;
+}
+
+.brand-full-name span {
+  display: block;
 }
 
 .brand a {
@@ -111,13 +118,13 @@ nav a:hover, nav a.active { color: var(--fg); background: color-mix(in oklab, va
 .hamburger { display: none; border: 1px solid var(--border); border-radius: 12px; padding: 8px 10px; background: transparent; color: var(--fg); }
 
 @media (max-width: 880px) {
-  .nav { min-height: 82px; padding: 8px 0; }
+  .nav { min-height: 52px; padding: 6px 0; }
   nav ul { display: none; }
-  nav ul.open { display: grid; gap: 10px; padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; position: absolute; right: 4vw; top: 82px; box-shadow: var(--shadow); }
+  nav ul.open { display: grid; gap: 10px; padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; position: absolute; right: 4vw; top: 52px; box-shadow: var(--shadow); }
   .hamburger { display: block; }
-  .logo { height: 64px; }
-  .brand-logo-link { gap: 10px; }
-  .brand-full-name { max-width: 240px; font-size: 0.95rem; }
+  .logo { height: 18px; }
+  .brand-logo-link { gap: 7px; }
+  .brand-full-name { max-width: 190px; font-size: 0.55rem; }
 }
 
 /* ===== Cards & Grid ===== */
