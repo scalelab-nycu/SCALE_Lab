@@ -75,7 +75,7 @@
     panels.forEach(p => io.observe(p));
 
     loadSiteData().then(data => {
-      document.getElementById('aboutVision').textContent = 'SCALE Lab was established by Prof. Po-Tsang Huang. ' + data.research.vision;
+      document.getElementById('aboutVision').textContent = data.research.vision;
       const highlights = document.getElementById('highlights');
       const cards = [];
       for (const t of data.research.thrusts) {
