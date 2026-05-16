@@ -75,7 +75,7 @@
     panels.forEach(p => io.observe(p));
 
     loadSiteData().then(data => {
-      document.getElementById('aboutVision').textContent = data.research.vision;
+      document.getElementById('aboutVision').textContent = 'Our research explores the next frontier of carbon-aware, sustainable, and memory-centric computing for AI and data-intensive applications. We develop energy-efficient circuits, memory subsystems, and computing architectures that rethink how data is stored, moved, and processed. Our key directions include 3D-aware design methodologies for TSV/Monolithic/Thin-3D integration, 3D DRAM/SRAM subsystems, memory-centric interconnection architectures, low-bit AI computing, and digital computation-in-memory & in-memory-search circuits. By co-optimizing circuits, memories, interconnects, 3D integration technologies, and carbon impact, we aim to break the data-movement bottleneck, improve energy efficiency, and enable scalable computing platforms for power-limited and energy-limited systems.';
       const highlights = document.getElementById('highlights');
       const cards = [];
       for (const t of data.research.thrusts) {
