@@ -56,23 +56,25 @@ body { background: var(--bg); color: var(--fg); }
 
 /* ===== Header / Nav ===== */
 header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); z-index: 50; overflow: visible; }
-.nav { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; min-height: 116px; overflow: visible; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; min-height: 140px; overflow: visible; }
 
 .logo {
-  width: auto;
+  width: auto !important;
   height: auto;
-  max-width: none;
+  max-width: none !important;
+  max-height: none !important;
   transition: opacity 0.2s ease;
   flex-shrink: 0;
 }
 
 .logo-full-name {
   display: block;
-  height: 104px;
-  width: auto;
-  max-width: none;
-  max-height: none;
+  height: 118px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: none !important;
   object-fit: contain;
+  object-position: center;
 }
 
 .logo:hover { opacity: 0.8; }
@@ -90,7 +92,7 @@ header { position: sticky; top: 0; backdrop-filter: saturate(1.2) blur(8px); bac
 .brand-logo-link {
   display: inline-flex;
   align-items: center;
-  line-height: 0;
+  line-height: normal;
   overflow: visible;
 }
 
@@ -109,11 +111,11 @@ nav a:hover, nav a.active { color: var(--fg); background: color-mix(in oklab, va
 .hamburger { display: none; border: 1px solid var(--border); border-radius: 12px; padding: 8px 10px; background: transparent; color: var(--fg); }
 
 @media (max-width: 880px) {
-  .nav { min-height: 92px; }
+  .nav { min-height: 104px; padding: 10px 0; }
   nav ul { display: none; }
-  nav ul.open { display: grid; gap: 10px; padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; position: absolute; right: 4vw; top: 92px; box-shadow: var(--shadow); }
+  nav ul.open { display: grid; gap: 10px; padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; position: absolute; right: 4vw; top: 104px; box-shadow: var(--shadow); }
   .hamburger { display: block; }
-  .logo-full-name { height: 78px; width: auto; max-width: none; }
+  .logo-full-name { height: 84px !important; width: auto !important; max-width: none !important; }
 }
 
 /* ===== Cards & Grid ===== */
