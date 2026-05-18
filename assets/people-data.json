@@ -1,5 +1,8 @@
 {
-  "phd": [],
+  "phd": [
+    {"name":"徐竹秀","degree":"M.S.","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""},
+    {"name":"Rameshwari Yogesh Fulpagare","degree":"M.S.","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""}
+  ],
   "current": [
     {"name":"黃資涵","degree":"M.S.","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""},
     {"name":"莊涵傑","degree":"M.S.","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""},
