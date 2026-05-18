@@ -84,8 +84,7 @@ if (document.body.dataset.page === 'publication') {
 
 // Member page display normalization
 if (document.body.dataset.page === 'people') {
-  let normalizeAttempts = 0;
-  const normalizeTimer = setInterval(() => {
+  const fixMemberRows = () => {
     document.querySelectorAll('.td-position').forEach(cell => {
       cell.textContent = cell.textContent
         .replaceAll('TSMC(台積電)', 'DTP/TSMC (Design Technology Platform/台積電)')
@@ -103,19 +102,27 @@ if (document.body.dataset.page === 'people') {
       const title = em.textContent.trim();
 
       if (name.includes('吳易真') || title === 'Energy-Efficient Accelerator with Relative-Indexing Memory for Sparse Compressed CNN' || title === 'An Energy-Efficient Accelerator with Relative-Indexing Memory for Sparse Compressed CNN') {
-        if (thesisCell.firstChild) thesisCell.firstChild.textContent = '應用於壓縮卷積神經網路之具能源效益加速器設計';
+        thesisCell.childNodes[0].nodeValue = '應用於壓縮卷積神經網路之具能源效益加速器設計';
         em.textContent = 'An Energy-Efficient Accelerator with Relative-Indexing Memory for Sparse Compressed Convolutional Neural Network';
       }
 
       if (name.includes('楊子鋐') || title === 'Resource-Constrained Design Exploration of CNN for Edge Computing Inferences') {
-        if (thesisCell.firstChild) thesisCell.firstChild.textContent = '應用於終端卷積神經網路之資源限制設計方法探討';
+        thesisCell.childNodes[0].nodeValue = '應用於終端卷積神經網路之資源限制設計方法探討';
         em.textContent = 'Resource-Constrained Design Exploration of Convolutional Neural Network for Edge Computing Inferences';
       }
     });
+  };
 
+  let normalizeAttempts = 0;
+  const normalizeTimer = setInterval(() => {
+    fixMemberRows();
     normalizeAttempts += 1;
-    if (normalizeAttempts >= 100) {
-      clearInterval(normalizeTimer);
-    }
+    if (normalizeAttempts >= 100) clearInterval(normalizeTimer);
   }, 50);
+
+  const alumniBody = document.getElementById('alumni-tbody');
+  if (alumniBody) {
+    const observer = new MutationObserver(fixMemberRows);
+    observer.observe(alumniBody, { childList: true, subtree: true });
+  }
 }
