@@ -12,8 +12,8 @@ const HEADER_HTML = `
     <ul id="menu">
       <li><a data-page="research" href="research.html">Research</a></li>
       <li><a data-page="advisor" href="advisor.html">Advisor</a></li>
-      <li><a data-page="publication" href="publication.html">Publication</a></li>
       <li><a data-page="people" href="people.html">Member</a></li>
+      <li><a data-page="publication" href="publication.html">Publication</a></li>
       <li><a data-page="course" href="course.html">Course</a></li>
     </ul>
   </nav>
