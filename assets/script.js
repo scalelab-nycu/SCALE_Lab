@@ -60,3 +60,24 @@ async function loadSiteData() {
 }
 
 window.loadSiteData = loadSiteData;
+
+// Publication page updates from latest publication list
+if (document.body.dataset.page === 'publication') {
+  const latestConferencePapers = [
+    'T.-W. Yang, W. Lu, Y.-Y. Huang, P. Su, and P.-T. Huang, “Energy-Efficient All-Digital Computation-in Memory Macro Design with CFeFET-based Booth Decoder,” IEEE International Symposium on Circuits and Systems (ISCAS), 2026.',
+    'H.-J. Hsu, H.-C. Lee, C.-Y. Shen, P.-T. Huang, S.-C. Lin, Y.-J. Wang, Y.-Y. Chen, C.-Y. Pao, H.-Y. Lee and C.-T. Chao, “Defect-based Testing for SRAM Address Decoders,” IEEE VLSI Test Symposium (VTS), 2026.',
+    'Y.-C. Nian, W. Lu and P.-T. Huang, “Non-Linear Tunable RO-based Time-to-Digital Converter for FeFET-based Computation-in-Memory Macro,” IEEE International VLSI Symposium on Technology, Systems and Applications, 2026.'
+  ];
+
+  const conferenceSection = Array.from(document.querySelectorAll('.publication-section'))
+    .find(section => section.querySelector('.section-header')?.textContent.trim() === 'Conference Papers');
+
+  const conferenceList = conferenceSection?.querySelector('.pub-list');
+  if (conferenceList && !conferenceList.textContent.includes('CFeFET-based Booth Decoder')) {
+    latestConferencePapers.slice().reverse().forEach(paper => {
+      const li = document.createElement('li');
+      li.textContent = paper;
+      conferenceList.prepend(li);
+    });
+  }
+}
