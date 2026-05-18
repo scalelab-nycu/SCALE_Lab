@@ -1,9 +1,9 @@
 {
   "phd": [
-    {"name":"徐竹秀","degree":"M.S.","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""},
-    {"name":"Rameshwari Yogesh Fulpagare","degree":"M.S.","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""},
-    {"name":"謝嘉恩(in-service)","degree":"M.S.","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""},
-    {"name":"陳建亨(in-service)":"M.S.","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""}
+    {"name":"徐竹秀","degree":"Ph.D","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""},
+    {"name":"Rameshwari Yogesh Fulpagare","degree":"Ph.D","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""},
+    {"name":"謝嘉恩(in-service)","degree":"Ph.D","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""},
+    {"name":"陳建亨(in-service)","degree":"Ph.D.","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""}
   ],
   "current": [
     {"name":"黃資涵","degree":"M.S.","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""},
