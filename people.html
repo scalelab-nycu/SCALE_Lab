@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Member · SCALE Lab</title>
   <meta name="color-scheme" content="light dark" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/style.css?v=member-fix-1" />
   <style>
     [data-page="people"] { --people-primary:#6366f1; --people-primary-weak:#eef2ff; }
     @media (prefers-color-scheme: dark) { [data-page="people"] { --people-primary:#818cf8; --people-primary-weak:#1e1b4b; } }
@@ -50,7 +50,7 @@
     </div>
   </section>
   <footer></footer>
-  <script src="assets/script.js"></script>
+  <script src="assets/script.js?v=member-fix-1"></script>
   <script>
     const oldPageAlumni = [
       { name:'盧緯 Wei Lu', degree:'Ph.D.', year:'2025.02', thesis_zh:'結合三維靜態記憶體與嵌入式主動橋接晶片組之彈性節能連線架構並應用於記憶體密集型人工智慧', thesis_en:'Flexible and Energy-Efficient Interconnection Architectures with 3D-SRAM and Embedded Active bridge Chipset for Memory-intensive AI applications', position:'NYCU, Post-doc' },
@@ -82,6 +82,7 @@
     function degreeClass(deg) { return deg === 'Ph.D.' ? 'degree-phd' : 'degree-ms'; }
     function yearValue(y) { const n = parseFloat(String(y).replace(/[^0-9.]/g, '')); return Number.isFinite(n) ? n : 0; }
     function sortByYearDesc(list) { return [...list].sort((a, b) => yearValue(b.year) - yearValue(a.year)); }
+    function keyOf(a) { return `${String(a.name || '').replace(/\s+/g, '')}|${a.degree}|${String(a.year || '').slice(0,4)}`; }
 
     function renderCurrent(members) {
       return members.map(m => {
@@ -95,21 +96,28 @@
     }
 
     function renderAlumni(alumni) {
-      return alumni.map(a => `<tr><td class="td-name">${a.name}<br><span class="member-degree ${degreeClass(a.degree)}">${a.degree} ${a.year}</span></td><td class="td-thesis">${a.thesis_zh}<em>${a.thesis_en}</em></td><td class="td-position">${a.position}</td></tr>`).join('');
+      return alumni.map(a => `<tr><td class="td-name">${a.name}<br><span class="member-degree ${degreeClass(a.degree)}">${a.degree} ${a.year}</span></td><td class="td-thesis">${a.thesis_zh || ''}<em>${a.thesis_en || ''}</em></td><td class="td-position">${a.position || ''}</td></tr>`).join('');
     }
 
-    fetch('assets/people-data.json')
-      .then(r => r.json())
+    fetch('assets/people-data.json?v=member-fix-1', { cache: 'no-store' })
+      .then(r => {
+        if (!r.ok) throw new Error('Failed to load people-data.json');
+        return r.json();
+      })
       .then(data => {
-        const alumniKeys = new Set(data.alumni.map(a => `${a.name}|${a.degree}|${a.year}`));
+        const alumniKeys = new Set((data.alumni || []).map(keyOf));
         const mergedAlumni = [
-          ...oldPageAlumni.filter(a => !alumniKeys.has(`${a.name}|${a.degree}|${a.year}`)),
-          ...data.alumni
+          ...oldPageAlumni.filter(a => !alumniKeys.has(keyOf(a))),
+          ...(data.alumni || [])
         ];
-        document.getElementById('current-grid').innerHTML = renderCurrent(data.current);
+        document.getElementById('current-grid').innerHTML = renderCurrent(data.current || []);
         document.getElementById('alumni-tbody').innerHTML = renderAlumni(sortByYearDesc(mergedAlumni));
       })
-      .catch(err => console.error('Failed to load people-data.json:', err));
+      .catch(err => {
+        console.error(err);
+        document.getElementById('current-grid').innerHTML = '<p class="muted">Member data failed to load.</p>';
+        document.getElementById('alumni-tbody').innerHTML = renderAlumni(sortByYearDesc(oldPageAlumni));
+      });
   </script>
 </body>
 </html>
