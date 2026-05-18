@@ -5,38 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SCALE Lab</title>
   <meta name="color-scheme" content="light dark" />
-  <link rel="stylesheet" href="assets/style.css?v=member-data-json-4" />
+  <link rel="stylesheet" href="assets/style.css?v=member-data-json-5" />
   <style>
     [data-page="people"] { --people-primary:#6366f1; --people-primary-weak:#eef2ff; }
     @media (prefers-color-scheme: dark) { [data-page="people"] { --people-primary:#818cf8; --people-primary-weak:#1e1b4b; } }
     .section { padding-top: 20px; padding-bottom: 38px; }
     .member-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:9px; margin-top:10px; margin-bottom:22px; }
-    .member-card { display:flex; align-items:center; background:var(--card); border:1px solid var(--border); border-radius:10px; overflow:hidden; transition:box-shadow .2s; min-height:82px; }
+    .member-card { display:flex; align-items:center; background:var(--card); border:1px solid var(--border); border-radius:10px; overflow:hidden; transition:box-shadow .2s; min-height:86px; }
     .member-card:hover { box-shadow:var(--shadow); }
-    .member-card-photo, .member-card-photo-placeholder { width:68px; min-width:68px; height:82px; object-fit:cover; object-position:top; display:block; }
-    .member-card-photo-placeholder { background:var(--people-primary-weak); display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:1.25rem; flex-shrink:0; }
-    .member-card-body { padding:7px 10px; flex:1; }
-    .member-card-name { font-size:.9rem; font-weight:700; color:var(--fg); margin-bottom:0; line-height:1.18; }
-    .member-card-name-en { font-size:.76rem; color:var(--muted); margin-bottom:4px; line-height:1.18; }
-    .member-card-degree, .member-degree { display:inline-block; padding:0 7px; border-radius:7px; font-size:.68rem; font-weight:600; line-height:1.35; }
+    .member-card-photo, .member-card-photo-placeholder { width:70px; min-width:70px; height:86px; object-fit:cover; object-position:top; display:block; }
+    .member-card-photo-placeholder { background:var(--people-primary-weak); display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:1.3rem; flex-shrink:0; }
+    .member-card-body { padding:7px 11px; flex:1; }
+    .member-card-name { font-size:1rem; font-weight:700; color:var(--fg); margin-bottom:0; line-height:1.2; }
+    .member-card-name-en { font-size:.84rem; color:var(--muted); margin-bottom:4px; line-height:1.2; }
+    .member-card-degree, .member-degree { display:inline-block; padding:0 7px; border-radius:7px; font-size:.76rem; font-weight:600; line-height:1.4; }
     .member-card-degree { margin-bottom:2px; }
     .member-degree { margin-top:2px; }
-    .member-card-email { display:flex; align-items:center; gap:4px; font-size:.72rem; color:var(--people-primary); text-decoration:none; word-break:break-all; margin-top:2px; line-height:1.2; }
+    .member-card-email { display:flex; align-items:center; gap:4px; font-size:.78rem; color:var(--people-primary); text-decoration:none; word-break:break-all; margin-top:2px; line-height:1.2; }
     .people-table { background:var(--card); border:1px solid var(--border); border-radius:9px; overflow:hidden; margin-top:10px; margin-bottom:24px; }
     .people-table table { width:100%; border-collapse:collapse; }
     .people-table tbody tr:hover { background:var(--people-primary-weak); }
     .people-table tbody tr:last-child td { border-bottom:none; }
-    .people-table td { padding:6px 10px; border-bottom:1px solid var(--border); color:var(--fg); font-size:.8rem; vertical-align:middle; line-height:1.25; }
-    .td-name { width:150px; font-weight:600; }
+    .people-table td { padding:7px 10px; border-bottom:1px solid var(--border); color:var(--fg); font-size:.9rem; vertical-align:middle; line-height:1.28; }
+    .td-name { width:155px; font-weight:600; }
     .degree-phd { background:color-mix(in oklab,var(--people-primary) 15%,transparent); color:var(--people-primary); }
     .degree-ms { background:color-mix(in oklab,var(--people-primary) 10%,transparent); color:var(--people-primary); }
-    .td-thesis { color:var(--fg); line-height:1.25; }
-    .td-thesis em { display:block; color:var(--muted); font-size:.76rem; margin-top:1px; line-height:1.25; }
-    .td-position { width:170px; color:var(--muted); font-size:.78rem; }
-    .section-label { margin-top:24px; margin-bottom:0; color:var(--fg); font-size:1.42rem; font-weight:800; }
+    .td-thesis { color:var(--fg); line-height:1.28; }
+    .td-thesis em { display:block; color:var(--muted); font-size:.84rem; margin-top:1px; line-height:1.28; }
+    .td-position { width:175px; color:var(--muted); font-size:.86rem; }
+    .section-label { margin-top:24px; margin-bottom:0; color:var(--fg); font-size:1.48rem; font-weight:800; }
     .section-label:first-of-type { margin-top:0; }
     @media (max-width:900px) { .member-grid { grid-template-columns:1fr; } }
-    @media (max-width:768px) { .section { padding-top:16px; padding-bottom:30px; } .member-grid { gap:8px; margin-top:9px; margin-bottom:20px; } .people-table { overflow-x:auto; } .people-table table { min-width:620px; } .member-card-photo, .member-card-photo-placeholder { width:62px; min-width:62px; height:76px; } .member-card { min-height:76px; } .member-card-body { padding:6px 9px; } }
+    @media (max-width:768px) { .section { padding-top:16px; padding-bottom:30px; } .member-grid { gap:8px; margin-top:9px; margin-bottom:20px; } .people-table { overflow-x:auto; } .people-table table { min-width:620px; } .member-card-photo, .member-card-photo-placeholder { width:64px; min-width:64px; height:78px; } .member-card { min-height:78px; } .member-card-body { padding:6px 10px; } }
   </style>
 </head>
 <body data-page="people">
@@ -52,7 +52,7 @@
     </div>
   </section>
   <footer></footer>
-  <script src="assets/script.js?v=member-data-json-4"></script>
+  <script src="assets/script.js?v=member-data-json-5"></script>
   <script>
     function degreeClass(deg) { return deg === 'Ph.D.' ? 'degree-phd' : 'degree-ms'; }
     function yearValue(y) { const n = parseFloat(String(y).replace(/[^0-9.]/g, '')); return Number.isFinite(n) ? n : 0; }
@@ -71,7 +71,7 @@
       return alumni.map(a => `<tr><td class="td-name">${a.name}<br><span class="member-degree ${degreeClass(a.degree)}">${a.degree} ${a.year}</span></td><td class="td-thesis">${a.thesis_zh || ''}<em>${a.thesis_en || ''}</em></td><td class="td-position">${a.position || ''}</td></tr>`).join('');
     }
 
-    fetch('assets/people-data.json?v=member-data-json-4', { cache: 'no-store' })
+    fetch('assets/people-data.json?v=member-data-json-5', { cache: 'no-store' })
       .then(r => { if (!r.ok) throw new Error('Failed to load people-data.json'); return r.json(); })
       .then(data => {
         document.getElementById('phd-grid').innerHTML = renderCurrent(data.phd || []);
