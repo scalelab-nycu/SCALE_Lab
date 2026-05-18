@@ -24,7 +24,7 @@
     {"name":"Ranjan","degree":"M.S.","thesis_zh":"","thesis_en":"","position":"","email":"","photo":""}
   ],
   "alumni": [
-    {"name":"呂昀庭","degree":"M.S.","year":"2026","thesis_zh":"具多位元精確比對之全數位 FeRAM 記憶體內相似度 搜尋引擎","thesis_en":"An All-Digital FeRAM-based In-Memory Similarity Search Engine with Multi-bit Exact Matching","position":""},
+    {"name":"呂昀庭","degree":"M.S.","year":"2026","thesis_zh":"具多位元精確比對之全數位 FeRAM 記憶體內相似度 搜尋引擎","thesis_en":"An All-Digital FeRAM-based In-Memory Similarity Search Engine with Multi-bit Exact Matching","position":"Novatek(聯詠科技)"},
     {"name":"林欣穎","degree":"M.S.","year":"2026","thesis_zh":"數位記憶體內運算架構之模組分析模型與資料流導向設計空間探索","thesis_en":"Analytical Macro-Level Model and Dataflow-Aware Design Exploration for Digital Compute-in-Memory Architectures","position":"DTP/TSMC (Design Technology Platform/台積電)"},
     {"name":"黃威誌","degree":"M.S.","year":"2026","thesis_zh":"結合敏感度導向合成資料之自動化 BSIM-CMG 參數萃取器應用於 GAA 與 CFET 技術","thesis_en":"An Automatic BSIM-CMG Parameter Extractor with Sensitivity-Driven Synthetic Data for GAA and CFET Technologies","position":"DTP/TSMC (Design Technology Platform/台積電)"},
     {"name":"盧緯 Wei Lu","degree":"Ph.D.","year":"2025.02","thesis_zh":"結合三維靜態記憶體與嵌入式主動橋接晶片組之彈性節能連線架構並應用於記憶體密集型人工智慧","thesis_en":"Flexible and Energy-Efficient Interconnection Architectures with 3D-SRAM and Embedded Active bridge Chipset for Memory-intensive AI applications","position":"NYCU, Post-doc"},
@@ -39,7 +39,7 @@
     {"name":"陳怡安","degree":"M.S.","year":"2024","thesis_zh":"利用壓縮超維度計算技術實現高能效內存檢索引擎","thesis_en":"Energy-Efficient In-Memory Retrieval Engine with Compressed Hyperdimensional Computing Techniques","position":"Novatek(聯詠科技)"},
     {"name":"陳磊","degree":"M.S.","year":"2024","thesis_zh":"基於三維動態隨機存取記憶體庫級優化之16奈米高面積效能擴散模型加速器","thesis_en":"16nm Area-Efficient Accelerator Design with 3D-DRAM and Bank-Level Dataflow Optimization for Diffusion Models","position":"DTP/TSMC (Design Technology Platform/台積電)"},
     {"name":"黃志棋","degree":"M.S.","year":"2024","thesis_zh":"數位記憶體內運算模組之分析模型與設計探索","thesis_en":"Analytical Model and Design Exploration of Digital Computing-In-Memory Macros","position":"Novatek(聯詠科技)"},
-    {"name":"賴怡廷","degree":"M.S.","year":"2024","thesis_zh":"基於積層型三維技術實現高密度雙層靜態隨機存取記憶體具備矽柱考慮分區和共享位線方案","thesis_en":"High-Density Dual-Layer 3D-SRAM Array with Si-pillar-aware partition and shared Bitline scheme using Monolithic 3D Elevated-Epi Technique","position":""},
+    {"name":"賴怡廷","degree":"M.S.","year":"2024","thesis_zh":"基於積層型三維技術實現高密度雙層靜態隨機存取記憶體具備矽柱考慮分區和共享位線方案","thesis_en":"High-Density Dual-Layer 3D-SRAM Array with Si-pillar-aware partition and shared Bitline scheme using Monolithic 3D Elevated-Epi Technique","position":"Realtek (瑞昱半導體)"},
     {"name":"王聖博","degree":"M.S.","year":"2023","thesis_zh":"應用於3D NAND Flash內存快取記憶體中具預測控制機制之分散式數位電源穩壓電路","thesis_en":"Distributed Digital Voltage Regulation with Predicted Control for Cache in 3D NAND Flash","position":"Macronix(旺宏電子)"},
     {"name":"倪健嘉","degree":"M.S.","year":"2023","thesis_zh":"基於16奈米FinFET實現具可變區塊之高能效數位式記憶體浮點數內運算電路設計","thesis_en":"Energy-Efficient Digital Floating-Point Computation-in-Memory Macro Design with Flexible Blocks using 16nm FinFET Technology","position":"DTP/TSMC (Design Technology Platform/台積電)"},
     {"name":"林政誠","degree":"M.S.","year":"2023","thesis_zh":"基於純整數量化注意力模組之28奈米ViT加速器設計","thesis_en":"A 28nm Vision Transformer Accelerator with Integer-Only Quantized Attention Block","position":"Novatek(聯詠科技)"},
