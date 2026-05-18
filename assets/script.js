@@ -93,16 +93,22 @@ if (document.body.dataset.page === 'people') {
         .replaceAll('NVDIA', 'NVIDIA');
     });
 
-    document.querySelectorAll('.td-thesis').forEach(cell => {
-      const em = cell.querySelector('em');
-      if (!em) return;
+    document.querySelectorAll('#alumni-tbody tr').forEach(row => {
+      const nameCell = row.querySelector('.td-name');
+      const thesisCell = row.querySelector('.td-thesis');
+      const em = thesisCell?.querySelector('em');
+      if (!nameCell || !thesisCell || !em) return;
+
+      const name = nameCell.textContent.trim();
       const title = em.textContent.trim();
-      if (title === 'Energy-Efficient Accelerator with Relative-Indexing Memory for Sparse Compressed CNN' || title === 'An Energy-Efficient Accelerator with Relative-Indexing Memory for Sparse Compressed CNN') {
-        if (cell.firstChild) cell.firstChild.textContent = '應用於壓縮卷積神經網路之具能源效益加速器設計';
+
+      if (name.includes('吳易真') || title === 'Energy-Efficient Accelerator with Relative-Indexing Memory for Sparse Compressed CNN' || title === 'An Energy-Efficient Accelerator with Relative-Indexing Memory for Sparse Compressed CNN') {
+        if (thesisCell.firstChild) thesisCell.firstChild.textContent = '應用於壓縮卷積神經網路之具能源效益加速器設計';
         em.textContent = 'An Energy-Efficient Accelerator with Relative-Indexing Memory for Sparse Compressed Convolutional Neural Network';
       }
-      if (title === 'Resource-Constrained Design Exploration of CNN for Edge Computing Inferences') {
-        if (cell.firstChild) cell.firstChild.textContent = '應用於終端卷積神經網路之資源限制設計方法探討';
+
+      if (name.includes('楊子鋐') || title === 'Resource-Constrained Design Exploration of CNN for Edge Computing Inferences') {
+        if (thesisCell.firstChild) thesisCell.firstChild.textContent = '應用於終端卷積神經網路之資源限制設計方法探討';
         em.textContent = 'Resource-Constrained Design Exploration of Convolutional Neural Network for Edge Computing Inferences';
       }
     });
