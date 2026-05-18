@@ -11,6 +11,7 @@
     main#snap { min-height: 100svh; overflow-y: visible; scroll-behavior: smooth; }
     section.panel { min-height: auto; display: grid; place-items: center; padding: 52px 6vw; position: relative; isolation: isolate; }
     section.panel.hero { min-height: 34svh; padding-top: 32px; padding-bottom: 20px; }
+    section#s3.panel, section#s4.panel { padding-top: 28px; padding-bottom: 42px; }
     .panel.hero { background: radial-gradient(1200px 600px at 20% 10%, color-mix(in oklab, var(--primary) 15%, transparent), transparent), radial-gradient(1000px 500px at 85% 20%, color-mix(in oklab, var(--primary) 10%, transparent), transparent); }
     .panel.alt { background: color-mix(in oklab, var(--card) 85%, transparent); }
     .panel .content { padding: 14px 16px; }
@@ -24,7 +25,7 @@
     .award-list li { margin: 8px 0; }
     #aboutVision { white-space: normal; margin-bottom: 0; font-size: 1.15rem; line-height: 1.65; }
     #highlights { margin-top: 6px !important; }
-    @media (max-width: 700px) { .about-layout { grid-template-columns: 1fr; gap: 18px; align-items: start; } .about-qr { width: 150px; height: 150px; } }
+    @media (max-width: 700px) { .about-layout { grid-template-columns: 1fr; gap: 18px; align-items: start; } .about-qr { width: 150px; height: 150px; } section#s3.panel, section#s4.panel { padding-top: 22px; padding-bottom: 34px; } }
   </style>
 </head>
 <body data-page="home">
