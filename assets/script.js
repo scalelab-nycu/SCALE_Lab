@@ -91,6 +91,15 @@ if (document.body.dataset.page === 'people') {
         .replaceAll('TSMC(台積電)', 'TSMC DTP')
         .replaceAll('NVDIA', 'NVIDIA');
     });
+
+    document.querySelectorAll('.td-thesis').forEach(cell => {
+      const em = cell.querySelector('em');
+      if (em && em.textContent.trim() === 'Energy-Efficient Accelerator with Relative-Indexing Memory for Sparse Compressed CNN') {
+        cell.firstChild.textContent = '應用於壓縮卷積神經網路之具能源效益加速器設計';
+        em.textContent = 'An Energy-Efficient Accelerator with Relative-Indexing Memory for Sparse Compressed Convolutional Neural Network';
+      }
+    });
+
     normalizeAttempts += 1;
     if (normalizeAttempts >= 100 || document.querySelectorAll('#alumni-tbody tr').length > 0) {
       clearInterval(normalizeTimer);
