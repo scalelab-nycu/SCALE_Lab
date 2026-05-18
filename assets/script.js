@@ -87,7 +87,9 @@ if (document.body.dataset.page === 'people') {
   let normalizeAttempts = 0;
   const normalizeTimer = setInterval(() => {
     document.querySelectorAll('.td-position').forEach(cell => {
-      cell.textContent = cell.textContent.replaceAll('TSMC(台積電)', 'TSMC DTP');
+      cell.textContent = cell.textContent
+        .replaceAll('TSMC(台積電)', 'TSMC DTP')
+        .replaceAll('NVDIA', 'NVIDIA');
     });
     normalizeAttempts += 1;
     if (normalizeAttempts >= 100 || document.querySelectorAll('#alumni-tbody tr').length > 0) {
