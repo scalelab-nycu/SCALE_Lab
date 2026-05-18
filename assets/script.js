@@ -81,3 +81,36 @@ if (document.body.dataset.page === 'publication') {
     });
   }
 }
+
+// Member page: make sure the entire Alumni table is ordered by graduation year.
+if (document.body.dataset.page === 'people') {
+  function parseAlumniYear(row) {
+    const badge = row.querySelector('.member-degree')?.textContent || '';
+    const match = badge.match(/(\d{4})(?:\.(\d{1,2}))?/);
+    if (!match) return 0;
+    const year = Number(match[1]);
+    const month = match[2] ? Number(match[2]) / 100 : 0;
+    return year + month;
+  }
+
+  function sortAlumniRows() {
+    const tbody = document.getElementById('alumni-tbody');
+    if (!tbody || tbody.dataset.sorted === 'true' || tbody.children.length < 2) return;
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    rows.sort((a, b) => parseAlumniYear(b) - parseAlumniYear(a));
+    rows.forEach(row => tbody.appendChild(row));
+    tbody.dataset.sorted = 'true';
+  }
+
+  window.addEventListener('load', () => {
+    sortAlumniRows();
+    const tbody = document.getElementById('alumni-tbody');
+    if (tbody) {
+      const observer = new MutationObserver(() => {
+        tbody.dataset.sorted = 'false';
+        sortAlumniRows();
+      });
+      observer.observe(tbody, { childList: true });
+    }
+  });
+}
