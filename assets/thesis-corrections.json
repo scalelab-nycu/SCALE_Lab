@@ -1,0 +1,302 @@
+[
+  {
+    "name_zh": "吳婉琪",
+    "name_en": "Wan-Chi Wu",
+    "thesis_zh": "積層型三維靜態隨機存取記憶體之變異分析及三維讀寫輔助電路設計",
+    "thesis_en": "SRAM Variation Analysis and Peripheral R/W-Assist Circuits using Monolithic 3D BEOL FinFET Circuits"
+  },
+  {
+    "name_zh": "羅進陽",
+    "name_en": "Chin-Yang Lo",
+    "thesis_zh": "利用三維靜態記憶體及環狀架構之輕量化稀疏卷積神經網路加速器設計",
+    "thesis_en": "Energy-Efficient Ring-Based Accelerator Design with 3D-SRAM for Compact Sparse CNN"
+  },
+  {
+    "name_zh": "高公鑠",
+    "name_en": "Kung-Shuo Kao",
+    "thesis_zh": "應用於高速毫米雷達之可變點數稀疏快速傅立葉轉換加速器設計",
+    "thesis_en": "Variable-length Sparse 2D Fast Fourier Transform Accelerator for High-Speed mmWave Radar Applications"
+  },
+  {
+    "name_zh": "林碩恩",
+    "name_en": "Shou-Ann Lin",
+    "thesis_zh": "利用時間多工降低光斑實現彩色全像抬頭顯示器",
+    "thesis_en": "Reducing Impacts of Speckle on Color Holographic Head-up Display by Time-Division Multiplexing Method"
+  },
+  {
+    "name_zh": "鄭之翔",
+    "name_en": "Chi-Hsiang Cheng",
+    "thesis_zh": "為稀疏特性的2D-FFT在mmWave雷達系統設計之高壓縮率轉置記憶體控制電路",
+    "thesis_en": "High-Compression Transpose Memory for Sparse 2D-FFT in mmWave Radar Applications"
+  },
+  {
+    "name_zh": "陳以晉",
+    "name_en": "Yi-Chien Chen",
+    "thesis_zh": "利用積層型三維積體電路實現具分時及雙邊緣觸發技術之快速響應數位線性穩壓器",
+    "thesis_en": "Fast-Response Digital Linear Voltage Regulator with Time-Sharing and Double-Edge-Triggered Techniques using Monolithic 3D IC"
+  },
+  {
+    "name_zh": "賴冠甫",
+    "name_en": "Kuan-Fu Lai",
+    "thesis_zh": "應用於晶內電源傳遞網路之晶向變異容忍積層型三維電源穩壓器",
+    "thesis_en": "Crystal-Orientation-Tolerant Voltage Regulator using Monolithic 3D BEOL FinFETs in Single-Crystal Islands for On-Chip Power Delivery Network"
+  },
+  {
+    "name_zh": "劉廷威",
+    "name_en": "Ting-Wei Liu",
+    "thesis_zh": "具能源及面積效益記憶體內運算使用高線性鎳結晶電阻式記憶體之深度神經網路加速器設計",
+    "thesis_en": "Energy/Area-Efficient Computation-in-Memory Accelerator Design Using High-Linearity Ni-Crystal RRAM for Deep Neural Networks"
+  },
+  {
+    "name_zh": "張豔怜",
+    "name_en": "Yan-Ling Chang",
+    "thesis_zh": "具製程變異容忍之積層型三維鰭式場效電晶體增壓緩衝器電路設計",
+    "thesis_en": "Variation-Tolerant Capacitive Boosted Buffer Design using Monolithic 3D-IC BEOL FinFETs"
+  },
+  {
+    "name_zh": "盧緯",
+    "name_en": "Lu Wei",
+    "thesis_zh": "利用交叉環狀連線網路架構與3D堆疊靜態記憶體實現CNN-LSTM神經網路節能加速器",
+    "thesis_en": "An Energy-Efficient Accelerator using Cross-Ring Interconnection Architecture with 3D-SRAM for Hybrid CNN-LSTM Network"
+  },
+  {
+    "name_zh": "蔡宗函",
+    "name_en": "Chung-Han Tsai",
+    "thesis_zh": "應用於三維矽穿孔積體電路之主動式去耦電容電源雜訊抑制方法",
+    "thesis_en": "Power Noise Suppression Design Methodology using Active Decoupling Capacitors for TSV 3DIC"
+  },
+  {
+    "name_zh": "Amit Sravan Bora",
+    "name_en": "Amit Sravan Bora",
+    "thesis_zh": "基於射頻採樣之全數位正交分頻多工跳頻系統",
+    "thesis_en": "An All-digital Wideband OFDM-based Frequency-hopping System using RF Sampling Data Converters"
+  },
+  {
+    "name_zh": "陳俊良",
+    "name_en": "Chun-Liang Chen",
+    "thesis_zh": "利用積層型三維積體電路實現混合搜尋之快速響應數位線性穩壓器",
+    "thesis_en": "A Fast-Response Hybrid-Searching Fully-Integrated LDO using Monolithic 3D IC Technology"
+  },
+  {
+    "name_zh": "管偉傑",
+    "name_en": "Wei-Jie Kuan",
+    "thesis_zh": "利用跨平台加速框架實現快速初期預測性擺置器",
+    "thesis_en": "Fast Early-phase Predictive Placer Using Cross-platform Acceleration Framework"
+  },
+  {
+    "name_zh": "張仕傑",
+    "name_en": "Shih-Jie Chang",
+    "thesis_zh": "藉由區域性電流預測主動式去耦合電容技術實現三維積體電路電源雜訊動態抑制",
+    "thesis_en": "Active DECAPs with Region-based Current Prediction for Dynamic Noise Suppression in TSV 3DICs"
+  },
+  {
+    "name_zh": "張宇閎",
+    "name_en": "Yu-Hong Chang",
+    "thesis_zh": "應用於低成本矽或玻璃中介層晶片間通信之感知匯流排編碼方法",
+    "thesis_en": "Cognitive Bus Coding Scheme for Inter-Chip Communications on Low-cost Si or Glass Interposers"
+  },
+  {
+    "name_zh": "高瑞憶",
+    "name_en": "Jui-I Kao",
+    "thesis_zh": "應用於混合數位及記憶體內運算卷積神經網路加速電路之精準度感知工作分配及資料排程技術",
+    "thesis_en": "Precision-Aware Workload Distribution and Dataflow for a Hybrid Digital-CIM Deep CNN Accelerator"
+  },
+  {
+    "name_zh": "藍芸平",
+    "name_en": "Yun-Ping Lan",
+    "thesis_zh": "利用晶粒方向容忍設計方法實現單晶粒島區之積層型三維靜態隨機存取記憶體及電壓穩壓器",
+    "thesis_en": "Crystal-orientation-Tolerant Design Techniques for Monolithic 3D SRAM and LDO with Single-Crystal-Islands"
+  },
+  {
+    "name_zh": "楊昀儒",
+    "name_en": "Yun-Ru Yang",
+    "thesis_zh": "基於自適應浮點數以及數位記憶體運算之節能深度神經網路加速電路設計",
+    "thesis_en": "Energy-Efficient Digital Computation-in-Memory Design with Adaptive Floating Point for Deep Neural Networks"
+  },
+  {
+    "name_zh": "Sunanda Thunder",
+    "name_en": "Sunanda Thunder",
+    "thesis_zh": "應用於新興記憶體內運算電路之具變異容忍深度學習訓練框架",
+    "thesis_en": "A Variation-Tolerant Deep Learning Training Framework for Emerging Computation-in-Memory Circuits"
+  },
+  {
+    "name_zh": "吳穎奕",
+    "name_en": "Ying-Yi Wu",
+    "thesis_zh": "基於16奈米FinFET客製化擴充標準單元之高能效數位式記憶體內運算電路設計",
+    "thesis_en": "Energy-Efficient Digital Computation-in-Memory Macro Design with Customized Extended Standard Cells using 16nm FinFET Technology"
+  },
+  {
+    "name_zh": "周育弘",
+    "name_en": "Yu-Hong Chou",
+    "thesis_zh": "應用於三維積體電路低電壓單端訊號之去耦電容分配和相位編碼技術",
+    "thesis_en": "Low-Voltage Single-Ended Signaling with DECAP Allocation and Phase Coding for 3DICs"
+  },
+  {
+    "name_zh": "楊庭維",
+    "name_en": "Ting-Wei Yang",
+    "thesis_zh": "基於互補式鐵電晶體之布斯乘法解碼器實現高能效全數位記憶體內運算電路模組",
+    "thesis_en": "Energy-Efficient All-Digital Computation-in-Memory Macro Design with CFeFET-based Booth Decoder"
+  },
+  {
+    "name_zh": "裴翰祥",
+    "name_en": "Han-Hsiang Pei",
+    "thesis_zh": "應用於邊緣端模擬量化遷移學習之高能效列管線化卷積神經網路訓練加速器",
+    "thesis_en": "An Energy-efficient Row-Based Pipelined CNN Training Accelerator for On-Device Transfer Learning with Simulated Quantization"
+  },
+  {
+    "name_zh": "黃詠暄",
+    "name_en": "Yung-Hsuan Huang",
+    "thesis_zh": "利用互補式鐵電電晶體不規則查表電路實現高能效數位式記憶體內運算模塊",
+    "thesis_en": "Energy-Efficient Digital Computation-in-Memory Macro Design with Irregular Lookup Table using Complementary Ferroelectric FETs"
+  },
+  {
+    "name_zh": "許宛庭",
+    "name_en": "Wang-Ting Hsu",
+    "thesis_zh": "利用雷射液態磊晶技術實現混合式積層型三維標準單元及全數位記憶體內運算電路",
+    "thesis_en": "Monolithic 3D Digital computation-in-memory circuits with hybrid-3D standard cells using Laser-Liquid-Phase-Epitaxy Technique"
+  },
+  {
+    "name_zh": "王聖博",
+    "name_en": "Sheng-Po Wang",
+    "thesis_zh": "應用於3D NAND Flash內存快取記憶體中具預測控制機制之分散式數位電源穩壓電路",
+    "thesis_en": "Distributed Digital Voltage Regulation with Predicted Control for Cache in 3D NAND Flash"
+  },
+  {
+    "name_zh": "倪健嘉",
+    "name_en": "Chien-Chia Ni",
+    "thesis_zh": "基於16奈米FinFET實現具可變區塊之高能效數位式記憶體浮點數內運算電路設計",
+    "thesis_en": "Energy-Efficient Digital Floating-Point Computation-in-Memory Macro Design with Flexible Blocks using 16nm FinFET Technology"
+  },
+  {
+    "name_zh": "林政誠",
+    "name_en": "Cheng-Chen, Lin",
+    "thesis_zh": "基於純整數量化注意力模組之28奈米ViT加速器設計",
+    "thesis_en": "A 28nm Vision Transformer Accelerater with Integer-Only Quantized Attention Block"
+  },
+  {
+    "name_zh": "黃良德",
+    "name_en": "Liang-Te Huang",
+    "thesis_zh": "應用於非揮發性記憶體內運算加速器之非規則操作單元壓縮技術",
+    "thesis_en": "Irregular Operation-Unit-based Compression for Non-Volatile Computation-in-Memory Accelerator"
+  },
+  {
+    "name_zh": "廖苡瑄",
+    "name_en": "Yi-Hsuan Liao",
+    "thesis_zh": "符合3D NAND Flash規格的高速階層式單端讀取Cache架構",
+    "thesis_en": "High-Speed Cache Design with Hierarchal Single-ended Read Scheme for 3D NAND Flash"
+  },
+  {
+    "name_zh": "林庭安",
+    "name_en": "Ting-An Lin",
+    "thesis_zh": "應用於多位元記憶體內運算電路之In-Situ錯誤更正框架及方法探索",
+    "thesis_en": "Framework and Design Exploration of In-Situ Error Correction for Multi-Bit Computation-in-Memory Circuits"
+  },
+  {
+    "name_zh": "余政融",
+    "name_en": "Jheng-Rong Yu",
+    "thesis_zh": "應用於邊緣裝置遷移學習之28奈米列管線化加速器設計",
+    "thesis_en": "A 28nm Row-based Pipelined Accelerator with Multi-bank Buffer Management for On-Device Transfer Learning"
+  },
+  {
+    "name_zh": "李婕伶",
+    "name_en": "Chieh-Ling Lee",
+    "thesis_zh": "基於高架積層型三維技術實現多型態混合式三維標準元件庫及數位式記憶體內運算電路",
+    "thesis_en": "Monolithic Hybrid-3D Standard Cell Library with Sandwiched Inter-Metal Layer for 3D Digital Computation-in-Memory Circuits"
+  },
+  {
+    "name_zh": "賴怡廷",
+    "name_en": "Yi-Ting Lai",
+    "thesis_zh": "基於積層型三維技術實現高密度雙層靜態隨機存取記憶體具備矽柱考慮分區和共享位線方案",
+    "thesis_en": "High-Density Dual-Layer 3D-SRAM Array with Si-pillar-aware partition and shared Bitline scheme using Monolithic 3D Elevated-Epi Technique"
+  },
+  {
+    "name_zh": "沈俊宇",
+    "name_en": "Chun-Yu Shen",
+    "thesis_zh": "應用於先期客製化診斷之模組化靜態隨機存取記憶體虛擬編譯器",
+    "thesis_en": "Module-Based SRAM Virtual Compiler for Early-Phase Customized Diagnosis"
+  },
+  {
+    "name_zh": "洪侑廷",
+    "name_en": "Yu-Ting Hung",
+    "thesis_zh": "利用互補式鐵電電晶體實現具變異容忍及抗噪性之內容可定址記憶體設計",
+    "thesis_en": "Variation-tolerant and Noise-Immune Content-Addressable Memory Design using Complementary FeFET"
+  },
+  {
+    "name_zh": "李宗育",
+    "name_en": "Tsung-Yu Li",
+    "thesis_zh": "基於16奈米FinFET及近似加法樹實現高能效數位式記憶體內運算電路",
+    "thesis_en": "An Efficient Digital Computation-in-Memory (D-CIM) Macro with Approximate Adder Tree using 16nm FinFET Technology"
+  },
+  {
+    "name_zh": "陳磊",
+    "name_en": "Chen Lei",
+    "thesis_zh": "基於三維動態隨機存取記憶體庫級優化之16奈米高面積效能擴散模型加速器",
+    "thesis_en": "16nm Area-Efficient Accelerator Design with 3D-DRAM and Bank-Level Dataflow Optimization for Diffusion Models"
+  },
+  {
+    "name_zh": "陳怡安",
+    "name_en": "Yi-Aa Chen",
+    "thesis_zh": "利用壓縮超維度計算技術實現高能效內存檢索引擎",
+    "thesis_en": "Energy-Efficient In-Memory Retrieval Engine with Compressed Hyperdimensional Computing Techniques"
+  },
+  {
+    "name_zh": "粘佑均",
+    "name_en": "You-Chun Nian",
+    "thesis_zh": "應用於鐵電電晶體記憶體內運算模組之非線性時間數位轉換器",
+    "thesis_en": "Non-Linear Tunable RO-based Time-to-Digital Converter for FeFET-based Computation-in-Memory Macro"
+  },
+  {
+    "name_zh": "黃志棋",
+    "name_en": "Chih-Chi Huang",
+    "thesis_zh": "數位記憶體內運算模組之分析模型與設計探索",
+    "thesis_en": "Analytical Model and Design Exploration of Digital Computing-In-Memory Macros"
+  },
+  {
+    "name_zh": "黃昱浤",
+    "name_en": "Yu-Hung Huang",
+    "thesis_zh": "應用於高效自回歸推論之 16 奈米 BitNet 加速器設計",
+    "thesis_en": "A 16nm 0.708 TOPS/mm2 BitNet Accelerator with Hybrid Ternary-Booth Multipliers for Efficient Autoregressive Inference"
+  },
+  {
+    "name_zh": "黃威誌",
+    "name_en": "Wei-Chih Huang",
+    "thesis_zh": "結合敏感度導向合成資料之自動化 BSIM-CMG 參數萃取器應用於 GAA 與 CFET 技術",
+    "thesis_en": "An Automatic BSIM-CMG Parameter Extractor with Sensitivity-Driven Synthetic Data for GAA and CFET Technologies"
+  },
+  {
+    "name_zh": "呂昀庭",
+    "name_en": "Yun-Ting Lu",
+    "thesis_zh": "具多位元精確比對之全數位 FeRAM 記憶體內相似度搜尋引擎",
+    "thesis_en": "An All-Digital FeRAM-based In-Memory Similarity Search Engine with Multi-bit Exact Matching"
+  },
+  {
+    "name_zh": "林欣穎",
+    "name_en": "Hsin-Yin Lin",
+    "thesis_zh": "數位記憶體內運算架構之模組分析模型與資料流導向設計空間探索",
+    "thesis_en": "Analytical Macro-Level Model and Dataflow-Aware Design Exploration for Digital Compute-in-Memory Architectures"
+  },
+  {
+    "name_zh": "葉舜良",
+    "name_en": "Shun-Liang Yeh",
+    "thesis_zh": "用於近內存計算 AI 加速器之分散式 3D 堆疊式記憶體控制器",
+    "thesis_en": "Distributed 3D-Stacked DRAM Controller for Processing-Near-Memory AI Accelerator"
+  },
+  {
+    "name_zh": "汪哿令",
+    "name_en": "Ke-Ling Wang",
+    "thesis_zh": "基於互補式鐵電晶體之漸進式高維度記憶體內搜尋引擎",
+    "thesis_en": "CFeFET-based Progressive Hyperdimensional In-Memory Search Engine"
+  },
+  {
+    "name_zh": "黃郁珊",
+    "name_en": "Yu-Shan Huang",
+    "thesis_zh": "適用於近記憶體運算分散式三維堆疊記憶體控制器之容錯方法",
+    "thesis_en": "Fault-Tolerant Methods for Distributed 3D-Stacked DRAM Controllers in DRAM-on-Logic Near-Memory Computing"
+  },
+  {
+    "name_zh": "李盈臻",
+    "name_en": "Ying-Chen Li",
+    "thesis_zh": "實現於 YOLOv5m 具高效資料流之可擴展 FPGA 加速器設計",
+    "thesis_en": "Scalable FPGA-based Accelerator Design with Efficient Dataflow for YOLOv5m"
+  }
+]
