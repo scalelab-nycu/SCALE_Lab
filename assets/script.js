@@ -88,7 +88,8 @@ if (document.body.dataset.page === 'people') {
   const normalizeTimer = setInterval(() => {
     document.querySelectorAll('.td-position').forEach(cell => {
       cell.textContent = cell.textContent
-        .replaceAll('TSMC(台積電)', 'TSMC DTP')
+        .replaceAll('TSMC(台積電)', 'DTP/TSMC (Design Technology Platform/台積電)')
+        .replaceAll('TSMC DTP', 'DTP/TSMC (Design Technology Platform/台積電)')
         .replaceAll('NVDIA', 'NVIDIA');
     });
 
