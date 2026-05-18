@@ -231,6 +231,25 @@
 
   <script src="assets/script.js"></script>
   <script>
+    const oldPageAlumni = [
+      {
+        name: '盧緯',
+        degree: 'Ph.D.',
+        year: '2025.02',
+        thesis_zh: '結合三維靜態記憶體與嵌入式主動橋接晶片組之彈性節能連線架構並應用於記憶體密集型人工智慧',
+        thesis_en: 'Flexible and Energy-Efficient Interconnection Architectures with 3D-SRAM and Embedded Active bridge Chipset for Memory-intensive AI applications',
+        position: 'NYCU, Post-doc'
+      },
+      {
+        name: '盧緯',
+        degree: 'M.S.',
+        year: '2020.09',
+        thesis_zh: '利用交叉環狀連線網路架構與3D堆疊靜態記憶體實現CNN-LSTM神經網路節能加速器',
+        thesis_en: 'An Energy-Efficient Accelerator using Cross-Ring Interconnection Architecture with 3D-SRAM for Hybrid CNN-LSTM Network',
+        position: 'NYCU, Ph.D.'
+      }
+    ];
+
     function degreeClass(deg) {
       return deg === 'Ph.D.' ? 'degree-phd' : 'degree-ms';
     }
@@ -284,8 +303,14 @@
     fetch('assets/people-data.json')
       .then(r => r.json())
       .then(data => {
+        const alumniNames = new Set(data.alumni.map(a => `${a.name}|${a.degree}|${a.year}`));
+        const mergedAlumni = [
+          ...oldPageAlumni.filter(a => !alumniNames.has(`${a.name}|${a.degree}|${a.year}`)),
+          ...data.alumni
+        ];
+
         document.getElementById('current-grid').innerHTML = renderCurrent(data.current);
-        document.getElementById('alumni-tbody').innerHTML  = renderAlumni(data.alumni);
+        document.getElementById('alumni-tbody').innerHTML  = renderAlumni(mergedAlumni);
       })
       .catch(err => console.error('Failed to load people-data.json:', err));
   </script>
