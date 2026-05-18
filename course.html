@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course · SCALE Lab</title>
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .course-intro {
+      margin-bottom: 36px;
+      padding: 28px 32px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--primary);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+    .course-intro h3 {
+      margin: 0 0 12px;
+      color: var(--primary);
+      font-size: 1.45rem;
+    }
+    .course-intro p {
+      margin: 0;
+      color: var(--fg);
+      font-size: 1.06rem;
+      line-height: 1.72;
+    }
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+    .course-card {
+      grid-column: span 6;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .course-card .content {
+      padding: 22px 24px;
+    }
+    .course-card h3 {
+      margin: 0 0 8px;
+      color: var(--fg);
+      font-size: 1.24rem;
+      line-height: 1.35;
+    }
+    .course-meta {
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 0.98rem;
+    }
+    .course-card p {
+      margin: 0 0 12px;
+      color: var(--fg);
+      font-size: 1rem;
+      line-height: 1.62;
+    }
+    .course-card ul {
+      margin: 10px 0 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 0.96rem;
+    }
+    .course-card li { margin: 5px 0; }
+    .course-note {
+      margin-top: 28px;
+      padding: 18px 22px;
+      border-radius: 14px;
+      background: color-mix(in oklab, var(--primary-weak) 55%, transparent);
+      border: 1px solid var(--border);
+      color: var(--fg);
+      line-height: 1.65;
+    }
+    @media (max-width: 880px) {
+      .course-card { grid-column: span 12; }
+      .course-intro { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body data-page="course">
+  <header></header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Course</h2>
+
+      <div class="course-intro">
+        <h3>Teaching Philosophy</h3>
+        <p>
+          Our courses connect digital IC fundamentals, memory-centric computing, low-power circuit design, 3D integration, and sustainable chip-design methodology. The goal is to help students build a cross-layer view from devices and circuits to memory subsystems, architectures, EDA flows, and emerging AI computing platforms.
+        </p>
+      </div>
+
+      <div class="course-grid">
+        <div class="course-card">
+          <div class="content">
+            <div class="course-meta">Graduate / Advanced Undergraduate</div>
+            <h3>Digital IC Design</h3>
+            <p>
+              This course introduces the foundations and advanced practice of digital integrated circuit design, with emphasis on CMOS logic, timing, power, noise margin, standard-cell design, and design automation flows.
+            </p>
+            <ul>
+              <li>CMOS logic, delay, power, and robustness analysis</li>
+              <li>Standard-cell design and timing characterization concepts</li>
+              <li>Low-power design techniques and modern-node design constraints</li>
+              <li>SPICE / EDA-oriented design and verification practice</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="content">
+            <div class="course-meta">Graduate</div>
+            <h3>Memory Circuit and System Design</h3>
+            <p>
+              This course covers memory circuits and memory subsystems, including SRAM, DRAM, nonvolatile memories, memory hierarchy, sensing circuits, peripheral circuits, and memory-centric computing concepts.
+            </p>
+            <ul>
+              <li>Memory array organization and peripheral circuit design</li>
+              <li>SRAM / DRAM / emerging-memory circuit fundamentals</li>
+              <li>Memory hierarchy and data-movement bottlenecks</li>
+              <li>Computation-in-memory and in-memory-search architectures</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="content">
+            <div class="course-meta">Graduate / New Module</div>
+            <h3>Sustainable-Oriented Chip Design</h3>
+            <p>
+              This course module explores sustainable chip design from carbon-aware design concepts to energy-efficient circuits, chiplets, 3D heterogeneous integration, fault tolerance, and carbon-aware computing architectures.
+            </p>
+            <ul>
+              <li>Carbon-aware design methodology and manufacturing energy</li>
+              <li>Energy-efficient circuits and low-energy system design</li>
+              <li>Chiplet / 3DIC heterogeneous integration</li>
+              <li>AI-assisted and carbon-aware computing architecture optimization</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="content">
+            <div class="course-meta">Project / Seminar Style</div>
+            <h3>Emerging AI and Memory-Centric Computing</h3>
+            <p>
+              This topic-oriented course discusses low-bit AI computing, green learning, hyperdimensional computing, digital CIM, FeFET / FeRAM-based designs, 3D memory systems, and accelerator architecture trends.
+            </p>
+            <ul>
+              <li>Low-bit AI and energy-efficient accelerator design</li>
+              <li>Hyperdimensional computing and in-memory search</li>
+              <li>3D SRAM / DRAM and memory-centric interconnects</li>
+              <li>Research-paper reading and proposal-oriented projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-note">
+        Course materials, schedules, and links will be updated according to the semester offering and university course system announcements.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="padding: 20px 0; border-top: 1px solid var(--border); color: var(--muted);">
+      © <span id="yearNow"></span> Sustainable Circuits and Architectures for Layered Eco-chips Lab.
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
