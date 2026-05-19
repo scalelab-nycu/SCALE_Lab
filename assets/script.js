@@ -20,7 +20,7 @@ const HEADER_HTML = `
 </div>`;
 
 const FOOTER_HTML = `
-<div class="container" style="padding: 20px 0; border-top: 1px solid var(--border); color: var(--muted);">
+<div class="container" style="padding: 10px 0; color: var(--muted);">
   © <span id="yearNow"></span> Sustainable Circuits and Architectures for Layered Eco-chips Lab.
 </div>`;
 
