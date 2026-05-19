@@ -100,9 +100,9 @@ nav a:hover, nav a.active { color: var(--fg); background: color-mix(in oklab, va
 .role { font-size: .9rem; color: var(--muted); }
 .input { padding: 10px 12px; border: 1px solid var(--border); background: var(--bg); border-radius: 12px; color: var(--fg); }
 .controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 10px; }
-footer { padding: 40px 0; border-top: 1px solid var(--border); color: var(--muted); }
-footer > .container[style*="border-top"] { border-top: none !important; }
-.footgrid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; padding-top: 20px; }
+footer { padding: 20px 0 24px; border-top: 1px solid var(--border); color: var(--muted); }
+footer > .container[style*="border-top"] { border-top: none !important; padding-top: 10px !important; padding-bottom: 10px !important; }
+.footgrid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; padding-top: 10px; }
 @media (max-width: 880px) { .footgrid { grid-template-columns: 1fr; } }
 .scroll-cue { position: absolute; left: 50%; bottom: 18px; translate: -50% 0; font-size: .9rem; color: var(--muted); display: grid; place-items: center; gap: 6px; }
 .scroll-cue svg { width: 22px; height: 22px; animation: bob 1.4s ease-in-out infinite; }
