@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research · SCALE Lab</title>
-  <meta name="color-scheme" content="light dark" />
+  <meta name="color-scheme" content="light" />
   <link rel="stylesheet" href="assets/style.css" />
   <style>
     .section { padding-top: 28px; }
@@ -15,7 +15,8 @@
     }
     .research-vision h3 { margin: 0 0 16px; color: var(--primary); font-size: 1.3rem; }
     .research-vision p { font-size: 1.05rem; line-height: 1.7; margin: 0; }
-    .research-overview-figure {
+    .research-overview-figure,
+    .research-direction-gallery {
       margin: 24px 0 0;
       padding: 10px;
       background: #fff;
@@ -23,11 +24,20 @@
       border-radius: 12px;
       box-shadow: var(--shadow);
     }
-    .research-overview-figure img {
+    .research-overview-figure img,
+    .research-direction-gallery img {
       display: block;
       width: 100%;
       height: auto;
       border-radius: 8px;
+    }
+    .research-direction-gallery { margin-top: 26px; }
+    .research-direction-gallery figcaption {
+      margin: 0 0 10px;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 1.08rem;
+      text-align: left;
     }
     .research-area { margin-bottom: 40px; }
     .area-header {
@@ -54,7 +64,8 @@
       .area-header { padding: 20px 24px; }
       .area-content { padding: 24px 20px; }
       .research-item { padding: 14px 16px; }
-      .research-overview-figure { padding: 6px; }
+      .research-overview-figure,
+      .research-direction-gallery { padding: 6px; }
     }
   </style>
 </head>
@@ -68,11 +79,7 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container" style="padding: 20px 0; border-top: 1px solid var(--border); color: var(--muted);">
-      © <span id="yearNow"></span> Sustainable Circuits and Architectures for Layered Eco-chips Lab.
-    </div>
-  </footer>
+  <footer></footer>
   <script src="assets/script.js"></script>
   <script>
     fetch('assets/research-data.json')
@@ -108,6 +115,10 @@
             <p>${d.goal}</p>
             <figure class="research-overview-figure">
               <img src="assets/images/research_overview.png" alt="Sustainable memory-centric computing research overview">
+            </figure>
+            <figure class="research-direction-gallery">
+              <figcaption>Research Direction Overview</figcaption>
+              <img src="assets/images/research_direction_gallery.svg" alt="Six SCALE Lab research direction figures">
             </figure>
           </div>
           ${areas}`;
