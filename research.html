@@ -48,6 +48,25 @@
     .research-sublist { margin: 12px 0 0 20px; padding: 0; list-style: none; }
     .research-sublist li { margin-bottom: 8px; padding-left: 16px; position: relative; color: var(--muted); font-size: 0.95rem; line-height: 1.5; }
     .research-sublist li::before { content: "•"; color: var(--primary); position: absolute; left: 0; font-weight: bold; }
+    .research-area.compact-items .research-list { gap: 4px; }
+    .research-area.compact-items .research-item {
+      padding: 4px 0 4px 18px;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      position: relative;
+    }
+    .research-area.compact-items .research-item::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .research-area.compact-items .research-item:hover { transform: none; box-shadow: none; }
+    .research-area.compact-items .research-item-title { margin-bottom: 0; font-weight: 500; line-height: 1.45; }
     @media (max-width: 880px) {
       .section { padding-top: 20px; }
       .research-vision { padding: 24px 20px; }
@@ -55,6 +74,7 @@
       .area-content { padding: 24px 20px; }
       .research-item { padding: 14px 16px; }
       .research-overview-figure { padding: 6px; }
+      .research-area.compact-items .research-item { padding: 4px 0 4px 18px; }
     }
   </style>
 </head>
@@ -75,6 +95,7 @@
       .then(r => r.json())
       .then(d => {
         const areas = d.areas.map(area => {
+          const compactClass = area.title === 'SoC/SiP Architecture/Platform' ? ' compact-items' : '';
           const items = area.items.map(item => {
             const bullets = item.bullets.length
               ? `<ul class="research-sublist">${item.bullets.map(b => `<li>${b}</li>`).join('')}</ul>`
@@ -87,7 +108,7 @@
           }).join('');
 
           return `
-            <div class="research-area">
+            <div class="research-area${compactClass}">
               <div class="area-header">
                 <h3 class="area-title">${area.title}</h3>
                 <div class="area-subtitle">${area.subtitle}</div>
