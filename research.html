@@ -32,7 +32,8 @@
     }
     .research-image-frame {
       width: 100%;
-      margin: 0 0 32px;
+      max-width: 960px;
+      margin: 0 auto 28px;
       padding: 0;
       background: #fff;
       border: 1px solid var(--border);
@@ -40,21 +41,21 @@
       box-shadow: var(--shadow);
       overflow: hidden;
     }
-    .research-image-frame:last-of-type { margin-bottom: 48px; }
+    .research-image-frame:last-of-type { margin-bottom: 44px; }
     .research-image-title {
       margin: 0;
-      padding: 16px 20px;
+      padding: 14px 18px;
       background: linear-gradient(135deg, var(--primary-weak), #fff);
       border-bottom: 1px solid var(--border);
       color: var(--primary);
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       font-weight: 700;
       line-height: 1.25;
     }
     .research-image-frame img { border-radius: 0 0 12px 12px; }
     .research-image-frame.image-compact img {
-      width: 88%;
-      margin: 16px auto 20px;
+      width: 84%;
+      margin: 14px auto 18px;
       border-radius: 8px;
     }
     .research-area { margin-bottom: 40px; }
@@ -102,8 +103,9 @@
       .area-content { padding: 24px 20px; }
       .research-item { padding: 14px 16px; }
       .research-overview-figure { padding: 6px; }
+      .research-image-frame { max-width: 100%; }
       .research-image-title { padding: 12px 14px; font-size: 1.15rem; }
-      .research-image-frame.image-compact img { width: 92%; margin: 12px auto 16px; }
+      .research-image-frame.image-compact img { width: 90%; margin: 12px auto 16px; }
       .research-area.compact-items .research-item { padding: 4px 0 4px 18px; }
     }
   </style>
@@ -175,7 +177,7 @@
           </figure>
           <figure class="research-image-frame image-compact">
             <figcaption class="research-image-title">Memory-Centric Interconnection Architecture</figcaption>
-            <img src="assets/images/research_5_memory_centric_interconnection.png" alt="Memory-Centric Interconnection Architecture">
+            <img src="assets/images/research_5_NoC.png" alt="Memory-Centric Interconnection Architecture">
           </figure>
           ${areas}`;
       })
