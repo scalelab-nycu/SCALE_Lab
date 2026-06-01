@@ -31,8 +31,8 @@
       border-radius: 8px;
     }
     .research-image-frame {
-      max-width: 920px;
-      margin: 0 auto 32px;
+      width: 100%;
+      margin: 0 0 32px;
       padding: 0;
       background: #fff;
       border: 1px solid var(--border);
@@ -52,6 +52,11 @@
       line-height: 1.25;
     }
     .research-image-frame img { border-radius: 0 0 12px 12px; }
+    .research-image-frame.image-compact img {
+      width: 88%;
+      margin: 16px auto 20px;
+      border-radius: 8px;
+    }
     .research-area { margin-bottom: 40px; }
     .area-header {
       background: linear-gradient(135deg, var(--primary-weak), var(--card));
@@ -97,8 +102,8 @@
       .area-content { padding: 24px 20px; }
       .research-item { padding: 14px 16px; }
       .research-overview-figure { padding: 6px; }
-      .research-image-frame { max-width: 100%; }
       .research-image-title { padding: 12px 14px; font-size: 1.15rem; }
+      .research-image-frame.image-compact img { width: 92%; margin: 12px auto 16px; }
       .research-area.compact-items .research-item { padding: 4px 0 4px 18px; }
     }
   </style>
@@ -152,9 +157,9 @@
               <img src="assets/images/research_overview.png" alt="Sustainable memory-centric computing research overview">
             </figure>
           </div>
-          <figure class="research-image-frame">
-            <figcaption class="research-image-title">3D-Aware Design Methodologies</figcaption>
-            <img src="assets/images/research_1_3D_aware.png" alt="3D-Aware Design Methodologies for TSV Monolithic and Thin-3D Integration">
+          <figure class="research-image-frame image-compact">
+            <figcaption class="research-image-title">3D-Aware Design Methodologies for 3D Integration</figcaption>
+            <img src="assets/images/research_1_3D_aware.png" alt="3D-Aware Design Methodologies for 3D Integration">
           </figure>
           <figure class="research-image-frame">
             <figcaption class="research-image-title">Memory Sub-System with 3D-SRAM or 3D-DRAM</figcaption>
