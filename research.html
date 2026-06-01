@@ -9,14 +9,13 @@
   <style>
     .section { padding-top: 28px; }
     .research-vision {
-      margin-bottom: 48px; padding: 32px;
+      margin-bottom: 24px; padding: 32px;
       background: var(--card); border: 1px solid var(--border);
       border-radius: 12px; border-left: 4px solid var(--primary);
     }
     .research-vision h3 { margin: 0 0 16px; color: var(--primary); font-size: 1.3rem; }
     .research-vision p { font-size: 1.05rem; line-height: 1.7; margin: 0; }
-    .research-overview-figure,
-    .research-image-frame {
+    .research-overview-figure {
       margin: 24px 0 0;
       padding: 10px;
       background: #fff;
@@ -31,7 +30,15 @@
       height: auto;
       border-radius: 8px;
     }
-    .research-image-frame { padding: 0; overflow: hidden; }
+    .research-image-frame {
+      margin: 0 0 48px;
+      padding: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
     .research-image-title {
       margin: 0;
       padding: 16px 20px;
@@ -141,11 +148,11 @@
             <figure class="research-overview-figure">
               <img src="assets/images/research_overview.png" alt="Sustainable memory-centric computing research overview">
             </figure>
-            <figure class="research-image-frame">
-              <figcaption class="research-image-title">3D-Aware Design Methodologies</figcaption>
-              <img src="assets/images/3d_aware_design_methodologies.png" alt="3D-Aware Design Methodologies for TSV Monolithic and Thin-3D Integration">
-            </figure>
           </div>
+          <figure class="research-image-frame">
+            <figcaption class="research-image-title">3D-Aware Design Methodologies</figcaption>
+            <img src="assets/images/3d_aware_design_methodologies.png" alt="3D-Aware Design Methodologies for TSV Monolithic and Thin-3D Integration">
+          </figure>
           ${areas}`;
       })
       .catch(err => console.error('Failed to load research-data.json:', err));
