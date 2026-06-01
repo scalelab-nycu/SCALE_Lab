@@ -31,7 +31,8 @@
       border-radius: 8px;
     }
     .research-image-frame {
-      margin: 0 0 48px;
+      max-width: 920px;
+      margin: 0 auto 48px;
       padding: 0;
       background: #fff;
       border: 1px solid var(--border);
@@ -95,6 +96,7 @@
       .area-content { padding: 24px 20px; }
       .research-item { padding: 14px 16px; }
       .research-overview-figure { padding: 6px; }
+      .research-image-frame { max-width: 100%; }
       .research-image-title { padding: 12px 14px; font-size: 1.15rem; }
       .research-area.compact-items .research-item { padding: 4px 0 4px 18px; }
     }
@@ -151,7 +153,7 @@
           </div>
           <figure class="research-image-frame">
             <figcaption class="research-image-title">3D-Aware Design Methodologies</figcaption>
-            <img src="assets/images/3d_aware_design_methodologies.png" alt="3D-Aware Design Methodologies for TSV Monolithic and Thin-3D Integration">
+            <img src="assets/images/research_1_3D_aware.png" alt="3D-Aware Design Methodologies for TSV Monolithic and Thin-3D Integration">
           </figure>
           ${areas}`;
       })
